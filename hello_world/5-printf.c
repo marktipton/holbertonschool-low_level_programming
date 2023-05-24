@@ -1,8 +1,12 @@
 #include <stdio.h>
-int main()
+/**
+ * main - the starting point for program execution in c
+ * return - ends the execution of a function
+ */
+int main(void)
 {
-puts ("/"Programming is like building a multilingual puzzle)
-return 0;
-}
+printf ("with proper grammar, but the outcome is a piece of art,");
 
+return (0);
+}
 
