@@ -2,7 +2,7 @@
 /**
  *main - the starting point for program execution in c
  *Return: ends the execution of a function
- *description: print a string using the printf command 
+ *Description: print a string using the printf command 
  */
 int main(void)
 {
