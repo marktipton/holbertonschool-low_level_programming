@@ -14,7 +14,7 @@ int n = 48;
 while (n <= 66)
 {
 putchar(n);
-putchar(n % 16 == 15 ? '\n' : ' ');
+putchar(n % 16 == 15);
 n++;
 }
 putchar('\n');
