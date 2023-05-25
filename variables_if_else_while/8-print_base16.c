@@ -11,10 +11,16 @@ int main(void)
 {
 int n = 48;
 /* your code goes there */
-while (n <= 57)
+while (n <= 102)
+{
+if ((n > 57) && (n < 97))
+{
+;
+}
+else
 {
 putchar(n);
-/*putchar(n % 16 == 15);*/
+}
 n++;
 }
 putchar('\n');
