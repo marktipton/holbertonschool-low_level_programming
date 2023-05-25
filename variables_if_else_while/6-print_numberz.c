@@ -11,7 +11,7 @@ int main(void)
 {
 int n = 0;
 /* your code goes there */
-while (n <= 9)
+for (int n=0; n<10; n++)
 {
 putchar(n);
 n++;
