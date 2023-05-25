@@ -3,7 +3,9 @@
 #include <stdio.h>
 /**
  * main - prints last digit
- */ 
+ *
+ * Return: always 0
+ */
 int main(void)
 {
 int n, r;
