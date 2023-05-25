@@ -9,11 +9,12 @@
 /* betty style doc for function main goes there */
 int main(void)
 {
-int n = 0;
+int n = 48;
 /* your code goes there */
-while (n <= 15)
+while (n <= 66)
 {
 putchar(n);
+putchar(n % 16 == 15 ? '\n' : ' ');
 n++;
 }
 putchar('\n');
