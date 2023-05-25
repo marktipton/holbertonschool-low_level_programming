@@ -18,6 +18,3 @@ printf("Size of char: %zu byte\n", sizeof(charType));
 printf("Size of longlongint: %zu bytes\n", sizeof(longlongintType));
 return (0);
 }
-~
-
-
