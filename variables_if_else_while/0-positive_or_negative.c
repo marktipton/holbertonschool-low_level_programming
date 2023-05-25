@@ -3,7 +3,9 @@
 #include <stdio.h>
 /* more headers goes there */
 
-/* betty style doc for function main goes there */
+/* betty style doc for function main goes there 
+ * main - this tells you whether n is greater than, less than, or equal to zero
+ */
 int main(void)
 {
 int n;
