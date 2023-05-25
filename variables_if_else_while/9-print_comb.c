@@ -13,9 +13,9 @@ int n = 48;
 /* your code goes there */
 while (n <= 57)
 {
+putchar(n);
 putchar(',');
 putchar(' ');
-putchar(n);
 n++;
 }
 putchar('\n');
