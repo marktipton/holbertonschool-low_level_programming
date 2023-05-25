@@ -1,8 +1,10 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/*
+/**
  * main - this tells you whether n is greater than, less than, or equal to zero
+ *
+ * Return: Always 0
  */
 int main(void)
 {
