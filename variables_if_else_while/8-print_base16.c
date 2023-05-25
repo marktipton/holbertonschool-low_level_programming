@@ -11,9 +11,9 @@ int main(void)
 {
 int n = 48;
 /* your code goes there */
-while (n <= 66)
+while (n <= 57)
 {
-putchar(n);
+/*putchar(n);*/
 putchar(n % 16 == 15);
 n++;
 }
