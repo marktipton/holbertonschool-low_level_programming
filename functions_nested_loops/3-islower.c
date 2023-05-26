@@ -4,7 +4,7 @@
  *
  * Return: always 0
  *
- * C: integer alphabet
+ * @c: (integer alphabet)
  */
 /* betty style doc for function main goes there */
 int _islower(int c)
