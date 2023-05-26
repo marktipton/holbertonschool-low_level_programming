@@ -6,15 +6,14 @@
  * Return: always 0
  */
 /* betty style doc for function main goes there */
-int _islower(int c)
+int main(void);
 {
-if ( _islower(c) )
+if (_islower(c));
 {
-	_putchar(49);
+return (1);
 }
 else
 {
-_putchar(48);
-}
 return (0);
+}
 }
