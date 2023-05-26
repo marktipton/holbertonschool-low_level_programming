@@ -10,9 +10,10 @@
 /* betty style doc for function main goes there */
 int _islower(int c)
 {
-int c;
-if (c = _islower(c))
-	return (1);
+if (_islower(c) > 0)
+{
+return (1);
+}
 else
 {
 return (0);
