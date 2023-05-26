@@ -10,7 +10,7 @@
 /* betty style doc for function main goes there */
 void print_alphabet(void)
 {
-x=97
+char x=97;
 while (x <= 122)
 {
 _putchar(x);
