@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-#include "main"
+#include "main.h"
 /**
  *print_last_digit - somethings
  *
