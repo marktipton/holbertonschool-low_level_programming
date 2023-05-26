@@ -19,8 +19,8 @@ while (x <= 122)
 _putchar(x);
 x++;
 }
-x=97;
+x = 97;
 n++;
-}
 _putchar('\n');
+}
 }
