@@ -7,7 +7,7 @@
 /* betty style doc for function main goes there */
 int _islower(int c)
 {
-if (_islower(c))
+if (c >= 'a' && <= 'z')
 {
 return (1);
 }
