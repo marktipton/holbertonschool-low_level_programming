@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
+#include "main"
 /**
  *print_alphabet_x10 - somethings
  *
