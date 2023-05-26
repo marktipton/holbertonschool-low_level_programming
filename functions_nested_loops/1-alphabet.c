@@ -3,14 +3,14 @@
 #include <stdio.h>
 #include "main.h"
 /**
- *main - somethings
+ *print_alphabet - somethings
  *
  * Return: always 0
  */
 /* betty style doc for function main goes there */
 void print_alphabet(void)
 {
-char x=97;
+char x = 97;
 while (x <= 122)
 {
 _putchar(x);
