@@ -10,13 +10,5 @@
 /* betty style doc for function main goes there */
 int _islower(int c)
 {
-if (_islower(c) > 0)
-{
-return (1);
+_islower(c);
 }
-else
-{
-return (0);
-}
-}
-
