@@ -10,9 +10,8 @@
 /* betty style doc for function main goes there */
 int main(void)
 {
-	{
-name=95;		
-_putchar(name);
+	{		
+_putchar(95);
 _putchar(112);
 _putchar(117);
 _putchar(116);
