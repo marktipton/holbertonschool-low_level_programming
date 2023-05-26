@@ -8,15 +8,13 @@
  * Return: always 0
  */
 /* betty style doc for function main goes there */
-int main(void)
+void print_alphabet(void)
 {
-{
-for(int x = 97; x <=122; x++)
+x=97
+while (x <= 122)
 {
 _putchar(x);
+x++;
 }
 _putchar('\n');
-return (0);
 }
-}
-
