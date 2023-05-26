@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
+#include "main.h"
 /**
  *main - somethings
  *
@@ -9,23 +10,13 @@
 /* betty style doc for function main goes there */
 int main(void)
 {
-int n = 48;
-/* your code goes there */
-while (n <= 57)
 {
-putchar(n);
-if (n == 57)
+for(int x = 97; x <=122; x++)
 {
-;
+_putchar(x);
 }
-else
-{
-putchar(',');
-putchar(' ');
-}
-n++;
-}
-putchar('\n');
+_putchar('\n');
 return (0);
+}
 }
 
