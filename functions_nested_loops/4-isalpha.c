@@ -10,16 +10,12 @@
 /* betty style doc for function main goes there */
 int _isalpha(int c)
 {
-char x = 97;
-int n = 0;
-while (n <=9)
+if (((c >= 'a') && (c <= 'z')) || ((c >= 'A') && (c <= 'Z')))
 {
-while (x <= 122)
+return (1);
+}
+else
 {
-_putchar(x);
-x++;
+return (0);
 }
-n++;
-}
-_putchar('\n');
 }
