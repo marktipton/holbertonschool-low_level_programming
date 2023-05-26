@@ -6,6 +6,8 @@
  *_isalpha - somethings
  *
  * Return: always 0
+ *
+ * @c: (integer alphabet lower or upper)
  */
 /* betty style doc for function main goes there */
 int _isalpha(int c)
