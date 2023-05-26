@@ -8,7 +8,7 @@
 /* betty style doc for function main goes there */
 int _islower(int c)
 {
-if (_islower(c));
+if (_islower(c))
 {
 return (1);
 }
