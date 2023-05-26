@@ -2,30 +2,23 @@
 #include <time.h>
 #include <stdio.h>
 /**
- *main - somethings
+ *print_alphabet_x10 - somethings
  *
  * Return: always 0
  */
 /* betty style doc for function main goes there */
-int main(void)
+void print_alphabet_x10(void)
 {
-int n = 48;
-/* your code goes there */
-while (n <= 57)
+char x = 97;
+int n = 0;
+while (n <=9)
 {
-putchar(n);
-if (n == 57)
+while (x <= 122)
 {
-;
-}
-else
-{
-putchar(',');
-putchar(' ');
+_putchar(x);
+x++;
 }
 n++;
 }
-putchar('\n');
-return (0);
+_putchar('\n');
 }
-
