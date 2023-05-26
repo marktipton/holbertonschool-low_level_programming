@@ -10,17 +10,12 @@
 /* betty style doc for function main goes there */
 int _islower(int c)
 {
-char x = 97;
-int n = 0;
-while (n <=9)
+int c;
+if (c = _islower(c))
+	return (1);
+else
 {
-while (x <= 122)
-{
-_putchar(x);
-x++;
+return (0);
 }
-n++;
-}
-_putchar('\n');
 }
 
