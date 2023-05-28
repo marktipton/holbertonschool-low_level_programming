@@ -10,18 +10,8 @@
 /* betty style doc for function main goes there */
 int _abs(int)
 {
-char x = 97;
-int n = 0;
-while (n <=9)
-{
-while (x <= 122)
-{
-_putchar(x);
-x++;
-}
-n++;
-}
+int i;
+_abs(i);
+return (0);
 _putchar('\n');
 }
-
-
