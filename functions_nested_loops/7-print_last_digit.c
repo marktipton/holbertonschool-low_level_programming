@@ -5,23 +5,17 @@
 /**
  *print_last_digit - somethings
  *
+ *@r: (print ld of this integer)
+ *
  * Return: always 0
  */
 /* betty style doc for function main goes there */
 int print_last_digit(int)
 {
-char x = 97;
-int n = 0;
-while (n <=9)
-{
-while (x <= 122)
-{
-_putchar(x);
-x++;
-}
-n++;
-}
+int r;
+_putchar('0' + r);
 _putchar('\n');
+return (0);
 }
 
 

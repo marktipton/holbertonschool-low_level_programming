@@ -5,6 +5,8 @@
 /**
  *_abs - somethings
  *
+ *@int: (take absv of this integer)
+ *
  * Return: always 0
  */
 /* betty style doc for function main goes there */

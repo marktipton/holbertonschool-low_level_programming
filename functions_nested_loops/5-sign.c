@@ -5,6 +5,8 @@
 /**
  *print_sign - somethings
  *
+ *@n: (integer gt lt eq 0)
+ *
  * Return: always 0
  */
 /* betty style doc for function main goes there */
