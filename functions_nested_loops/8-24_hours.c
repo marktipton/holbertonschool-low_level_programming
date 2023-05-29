@@ -22,6 +22,12 @@ while (c < 6)
 {
 while (d < 10)
 {
+if ((a == 2) && (b == 3) && (c == 5) && (d == 9))
+{
+_putchar('\n')
+}
+else
+{
 _putchar('0' + a);
 _putchar('0' + b);
 _putchar(':');
@@ -29,7 +35,7 @@ _putchar('0' + c);
 _putchar('0' + d);
 d++;
 _putchar('\n');
-if ((a == 2) && (b == 3) && (c == 5) && (d == 9))
+}
 {
 break;
 }
