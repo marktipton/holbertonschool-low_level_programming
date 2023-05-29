@@ -24,13 +24,13 @@ _putchar(c);
 while (d < 10)
 {
 _putchar(d);
-n++;
+d++;
 _putchar('\n');
 }
-n++;
+c++;
 }
-n++;
+b++;
 }
-n++;
+a++;
 }
 }
