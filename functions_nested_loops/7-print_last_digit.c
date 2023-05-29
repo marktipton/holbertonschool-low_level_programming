@@ -10,12 +10,11 @@
  * Return: always 0
  */
 /* betty style doc for function main goes there */
-int print_last_digit(int)
+int print_last_digit(int r)
 {
-int r;
-_putchar('0' + r);
+int n;
+n = r % 10;
+_putchar(n);
 _putchar('\n');
 return (0);
 }
-
-
