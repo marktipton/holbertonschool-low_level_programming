@@ -10,7 +10,10 @@
 /* betty style doc for function main goes there */
 void jack_bauer(void)
 {
-int a, b, c, d = 0;
+int a = 0;
+int b = 0;
+int c = 0;
+int d = 0;
 while (a < 3)
 {
 _putchar(a);
