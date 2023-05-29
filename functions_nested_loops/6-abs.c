@@ -10,7 +10,14 @@
 /* betty style doc for function main goes there */
 int _abs(int r)
 {
-int a = _abs(r);
+int a = ((-1) * r);
+if (r >= 0)
+{
+return (r);
+}
+if (r < 0)
+{
 return (a);
+}
 _putchar('\n');
 }
