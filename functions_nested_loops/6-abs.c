@@ -8,7 +8,7 @@
  * Return: always 0
  */
 /* betty style doc for function main goes there */
-int _abs(int i)
+int _abs(int r)
 {
 int a = _abs(i);
 return (a);
