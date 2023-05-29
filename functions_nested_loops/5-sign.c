@@ -28,4 +28,5 @@ return (-1);
 _putchar('-');
 }
 _putchar('\n');
+return (0);
 }
