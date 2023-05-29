@@ -14,7 +14,7 @@ int a, b, c, d = 0;
 while (a < 3)
 {
 _putchar(a);
-while (b < 4)
+while (b < 10)
 {
 _putchar(b);
 _putchar(':');
@@ -28,9 +28,19 @@ d++;
 _putchar('\n');
 }
 c++;
+d=0;
 }
+if ((a == 2) && (b == 3))
+{
+;
+}
+else
+{
 b++;
 }
+c=0;
+}
 a++;
+b=0;
 }
 }
