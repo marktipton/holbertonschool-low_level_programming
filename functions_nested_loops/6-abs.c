@@ -8,7 +8,8 @@
  * Return: always 0
  */
 /* betty style doc for function main goes there */
-int _abs(int i)
+int i;
+int _abs(int)
 {
 _abs(i);
 _putchar('\n');
