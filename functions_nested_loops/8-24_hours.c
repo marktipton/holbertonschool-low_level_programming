@@ -10,27 +10,27 @@
 /* betty style doc for function main goes there */
 void jack_bauer(void)
 {
-int n = 0;
-while (n < 3)
+int a, b, c, d = 0;
+while (a < 3)
 {
-_putchar(n);
-while (n < 4)
+_putchar(a);
+while (b < 4)
 {
-_putchar(n);
+_putchar(b);
 _putchar(':');
-while (n < 6)
+while (c < 6)
 {
-_putchar(n);
-while (n < 10)
+_putchar(c);
+while (d < 10)
 {
-_putchar(n);
+_putchar(d);
 n++;
-}
-n++;
-}
-n++;
-}
-n++;
-}
 _putchar('\n');
+}
+n++;
+}
+n++;
+}
+n++;
+}
 }
