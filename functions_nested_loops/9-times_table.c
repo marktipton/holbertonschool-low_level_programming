@@ -17,16 +17,15 @@ int c = (a * b);
 while (a < 10)
 	{
 	while (b < 10)
+	{
 	return (c);	
 	_putchar(',');
 	_putchar(' ');
-	if (c > 9)
+	b++;
+	if (c < 10)
 	{
 		_putchar(' ');
 	}
-	else
-	{
-		b++;
 	}
 	_putchar('\n');
 	a++;
