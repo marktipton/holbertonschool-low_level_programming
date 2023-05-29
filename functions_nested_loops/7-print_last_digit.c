@@ -16,5 +16,5 @@ int n;
 n = r % 10;
 _putchar('0' + n);
 return (n);
-_putchar('/n')
+_putchar('/n');
 }
