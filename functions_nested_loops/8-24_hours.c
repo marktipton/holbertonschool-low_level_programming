@@ -20,7 +20,7 @@ while (b < 10)
 {
 while (c < 6)
 {
-while ((d < 10) &&
+while (d < 10)
 {
 _putchar('0' + a);
 _putchar('0' + b);
