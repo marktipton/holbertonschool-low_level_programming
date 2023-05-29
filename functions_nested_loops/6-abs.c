@@ -1,9 +1,9 @@
-#include <stdio.h>
 #include "main.h"
+#include <stdio.h>
 /**
  *_abs - somethings
  *
- *@i: (take absv of this integer)
+ *@r: (take absv of this integer)
  *
  * Return: always 0
  */
