@@ -10,7 +10,8 @@
 /* betty style doc for function main goes there */
 int _abs(int i)
 {
-_abs(i);
+int a = _abs(i);
+_putchar(a);
 _putchar('\n');
 return (0);
 }
