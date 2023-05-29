@@ -16,17 +16,17 @@ int c = 0;
 int d = 0;
 while (a < 3)
 {
-_putchar(a);
+_putchar('0' + a);
 while (b < 10)
 {
-_putchar(b);
+_putchar('0' + b);
 _putchar(':');
 while (c < 6)
 {
-_putchar(c);
+_putchar('0' + c);
 while (d < 10)
 {
-_putchar(d);
+_putchar('0' + d);
 d++;
 _putchar('\n');
 }
