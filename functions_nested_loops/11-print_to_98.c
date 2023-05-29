@@ -16,20 +16,19 @@ _putchar('\n');
 }
 while (n != 98)
 	{
-		if (n < 0)
-		{
-		_putchar('-');
-		_putchar('0' + n);
-		_putchar(',');
-		_putchar(' ');
-		}
-		else
-		{	
-		_putchar('0' + n);
-		_putchar(',');
-                _putchar(' ');
-
-		}
+	if (n < 0)
+	{
+	_putchar('-');
+	_putchar('0' + n);
+	_putchar(',');
+	_putchar(' ');
+	}
+	else
+	{
+	_putchar('0' + n);
+	_putchar(',');
+	_putchar(' ');
+	}
 	if (n > 98)
 	{
 	n--;
