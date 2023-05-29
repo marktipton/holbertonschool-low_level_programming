@@ -8,10 +8,8 @@
  * Return: always 0
  */
 /* betty style doc for function main goes there */
-int add(int, int)
+int add(int a, int b)
 {
-int a;
-int b:
 int c = (a + b);
 _putchar(c);
 _putchar('\n');
