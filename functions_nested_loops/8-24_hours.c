@@ -28,6 +28,10 @@ while (a < 3)
 					{
 					goto newday;
 					}
+				else
+				{
+				;
+				}
 				}
 				c++;
 				d = 0;
