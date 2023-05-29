@@ -1,5 +1,3 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
 #include "main.h"
 /**
@@ -35,9 +33,6 @@ _putchar('0' + c);
 _putchar('0' + d);
 d++;
 _putchar('\n');
-}
-{
-break;
 }
 }
 c++;
