@@ -1,4 +1,4 @@
-#include <stdlib.h>
+iinclude <stdlib.h>
 #include <time.h>
 #include <stdio.h>
 #include "main.h"
@@ -19,13 +19,13 @@ return (1);
 }
 if (n == 0)
 {
-return (0);
 _putchar('0');
+return (0);
 }
 if (n < 0)
 {
-return (-1);
 _putchar('-');
+return (-1);
 }
 _putchar('\n');
 return (0);
