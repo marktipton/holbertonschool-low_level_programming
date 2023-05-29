@@ -1,19 +1,17 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
 #include "main.h"
 /**
  *add - somethings
  *
- *
- *
+ *@a: (add int 1)
+ *@b: (add int 2)
  * Return: always 0
  */
 /* betty style doc for function main goes there */
 int add(int a, int b)
 {
 int c = (a + b);
-_putchar(c);
+_putchar('0' + c);
 _putchar('\n');
 return (0);
 }
