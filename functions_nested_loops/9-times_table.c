@@ -38,6 +38,7 @@ while (a < 10)
 	b++;
 	if (c < 10)
 	{
+		c = a * b;
 		_putchar(' ');
 	}
 	}
