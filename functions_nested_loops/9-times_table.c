@@ -11,19 +11,20 @@
 void times_table(void)
 {
 int a = 0, b = 0;
-int c = a * b;
-int d = c / 10;
-int e = c % 10;
+int c, d, e;
 while (a < 10)
 	{
 	while (b < 10)
 	{
+	c = a * b;
 	if (c < 10)
 	{
 	_putchar(c + '0');
 	}
 	else
 	{
+	e = c % 10;
+	d = (c - d) / 10;
 	_putchar(d + '0');
 	_putchar(e + '0');
 	}
