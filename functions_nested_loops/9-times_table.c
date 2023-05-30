@@ -18,7 +18,8 @@ while (a < 10)
 	{
 	while (b < 10)
 	{
-	return (c);
+	_putchar(c/10 + '0');
+	_putchar(c%10 + '0');
 	_putchar(',');
 	_putchar(' ');
 	b++;
