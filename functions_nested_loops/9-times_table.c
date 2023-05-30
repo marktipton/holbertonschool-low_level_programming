@@ -8,11 +8,11 @@
 /* betty style doc for function main goes the*/
 void times_table(void)
 {
-int a = 0, b = 0;
+int a, b;
 int c, d, e;
-while (a < 10)
+for (a = 0; a < 10; a++)
 	{
-	while (b < 10)
+	for (b = 0; b < 10; b++)
 	{
 	c = a * b;
 	if (c > 9)
@@ -34,10 +34,9 @@ while (a < 10)
 		}
 		_putchar(c + '0');
 	}
-	b++;
 	}
-	a++;
 	_putchar('\n');
+	b = 0;
 	}
 }
 
