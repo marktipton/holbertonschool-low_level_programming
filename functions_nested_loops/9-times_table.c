@@ -26,7 +26,7 @@ while (a < 10)
 	_putchar(d + '0');
 	_putchar(e + '0');
 	}
-	if (b = 9)
+	if (b == 9)
 	{
 	;
 	}
