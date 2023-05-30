@@ -12,6 +12,8 @@ void times_table(void)
 {
 int a = 0, b = 0;
 int c = a * b;
+int d = c / 10;
+int e = c % 10;
 while (a < 10)
 	{
 	while (b < 10)
@@ -22,8 +24,8 @@ while (a < 10)
 	}
 	else
 	{
-	_putchar((c / 10) + '0');
-	_putchar((c % 10) + '0');
+	_putchar(d + '0');
+	_putchar(e + '0');
 	}
 	_putchar(',');
 	_putchar(' ');
