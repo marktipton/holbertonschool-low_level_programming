@@ -36,6 +36,11 @@ while (a < 10)
 	_putchar(' ');
 	}
 	b++;
+	c = a * b;
+	if (c < 10)
+	{
+	_putchar(' ');
+	}
 	}
 	_putchar('\n');
 	a++;
