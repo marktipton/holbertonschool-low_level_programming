@@ -9,30 +9,38 @@
 /* betty style doc for function main goes there */
 void print_to_98(int n)
 {
-while (1)
+if (n <= 98)
+{
+	while (n <= 98)
 	{
-	if (n == 98)
+		if (n == 98)
+		{
+			printf("%d", n);
+			goto end;
+		}
+		else
+		{
+			printf("%d, ", n);
+			printf("\n");
+		}
+	}
+}
+if (n >=98)
+{
+	while (n >= 98)
 	{
-	printf("%d", n);
-	goto end;
+		if (n == 98)
+		{
+			printf("%d", n);
+			goto end;
+		}
+		else
+		{
+			printf("%d", n);
+			printf("\n");
+		}
 	}
-	if (n < 0)
-	{
-	printf("%d, ", n);
-	}
-	else
-	{
-	printf("%d, ", n);
-	}
-	if (n > 98)
-	{
-	n--;
-	}
-	else
-	{
-	n++;
-	}
-	}
+}
 end:;
 _putchar('\n');
 }
