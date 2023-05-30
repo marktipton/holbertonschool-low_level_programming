@@ -20,15 +20,11 @@ while (n != 98)
 	{
 	_putchar('-');
 	n = -n;
-	printf("%d", n);
-	_putchar(',');
-	_putchar(' ');
+	printf("%d, ", n);
 	}
 	else
 	{
-	printf("%d", n);
-	_putchar(',');
-	_putchar(' ');
+	printf("%d, ", n);
 	}
 	if (n > 98)
 	{
