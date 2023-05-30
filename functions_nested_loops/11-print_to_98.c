@@ -25,9 +25,9 @@ if (n <= 98)
 	}
 	printf("\n");
 }
-if (n >= 98)
+if (n > 98)
 {
-	while (n >= 98)
+	while (n > 98)
 	{
 		if (n == 98)
 		{
