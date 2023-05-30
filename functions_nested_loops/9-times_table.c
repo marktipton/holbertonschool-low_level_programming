@@ -42,10 +42,18 @@ while (a < 10)
 	_putchar(' ');
 	}
 	}
-	_putchar('\n');
-	a++;
-	b = 0;
+	if (a == 9) && (b == 9)
+	{
+		goto end;
 	}
+	else 
+	{
+		_putchar('\n');
+		b = 0;
+		a++;
+	}
+	}
+end:;
 }
 
 
