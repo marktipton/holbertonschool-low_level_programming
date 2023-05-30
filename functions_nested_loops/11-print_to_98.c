@@ -19,7 +19,7 @@ while (1)
         }
 	if (n < 0)
 	{
-	printf("-%d, ", n);
+	printf("%d, ", n);
 	}
 	else
 	{
