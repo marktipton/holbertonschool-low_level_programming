@@ -18,8 +18,15 @@ while (a < 10)
 	{
 	while (b < 10)
 	{
-	_putchar(c/10 + '0');
-	_putchar(c%10 + '0');
+	if (c < 10)
+	{
+	_putchar(c);
+	}
+	else
+	{
+	_putchar(c / 10 + '0');
+	_putchar(c % 10 + '0');
+	}
 	_putchar(',');
 	_putchar(' ');
 	b++;
