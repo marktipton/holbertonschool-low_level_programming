@@ -37,6 +37,7 @@ while (a < 10)
 	}
 	_putchar('\n');
 	a++;
+	b = 0; 
 	}
 _putchar('\n');
 }
