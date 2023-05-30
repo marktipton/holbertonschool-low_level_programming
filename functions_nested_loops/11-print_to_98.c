@@ -23,6 +23,7 @@ if (n <= 98)
 			printf("%d, ", n);
 			printf("\n");
 		}
+		n++;
 	}
 }
 if (n >=98)
@@ -39,6 +40,7 @@ if (n >=98)
 			printf("%d", n);
 			printf("\n");
 		}
+		n--;
 	}
 }
 end:;
