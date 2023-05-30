@@ -3,8 +3,6 @@
 /**
  *times_table - somethings
  *
- *
- *
  * Return: always 0
  */
 /* betty style doc for function main goes the*/
@@ -28,8 +26,15 @@ while (a < 10)
 	_putchar(d + '0');
 	_putchar(e + '0');
 	}
+	if (b = 9)
+	{
+	;
+	}
+	else
+	{
 	_putchar(',');
 	_putchar(' ');
+	}
 	b++;
 	if (c < 10)
 	{
