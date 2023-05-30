@@ -18,7 +18,7 @@ while (a < 10)
 	{
 	if (c < 10)
 	{
-	_putchar(c);
+	_putchar(c + '0');
 	}
 	else
 	{
