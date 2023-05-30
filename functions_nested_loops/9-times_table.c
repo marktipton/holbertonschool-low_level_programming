@@ -46,7 +46,6 @@ while (a < 10)
 	a++;
 	b = 0;
 	}
-_putchar('\n');
 }
 
 
