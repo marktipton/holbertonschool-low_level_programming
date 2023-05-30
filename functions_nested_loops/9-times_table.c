@@ -24,7 +24,7 @@ while (a < 10)
 	else
 	{
 	e = c % 10;
-	d = (c - d) / 10;
+	d = c / 10;
 	_putchar(d + '0');
 	_putchar(e + '0');
 	}
