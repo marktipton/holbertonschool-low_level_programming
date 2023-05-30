@@ -42,7 +42,7 @@ while (a < 10)
 	_putchar(' ');
 	}
 	}
-	if (a == 9) && (b == 9)
+	if ((a == 9) && (b == 9))
 	{
 		goto end;
 	}
