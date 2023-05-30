@@ -12,6 +12,7 @@ int a = 0, b = 0;
 int c, d, e;
 while (a < 10)
 	{
+	_putchar('\n');
 	while (b < 10)
 	{
 	c = a * b;
@@ -42,18 +43,9 @@ while (a < 10)
 	_putchar(' ');
 	}
 	}
-	if ((a == 9) && (b == 9))
-	{
-		goto end;
+	b = 0;
+	a++;
 	}
-	else 
-	{
-		_putchar('\n');
-		b = 0;
-		a++;
-	}
-	}
-end:;
 }
 
 
