@@ -20,13 +20,13 @@ while (n != 98)
 	{
 	_putchar('-');
 	n = -n;
-	printf(%d, n);
+	printf("%d", n);
 	_putchar(',');
 	_putchar(' ');
 	}
 	else
 	{
-	printf(%d, n);
+	printf("%d", n);
 	_putchar(',');
 	_putchar(' ');
 	}
