@@ -21,7 +21,6 @@ if (n <= 98)
 		else
 		{
 			printf("%d, ", n);
-			printf("\n");
 		}
 		n++;
 	}
@@ -37,8 +36,7 @@ if (n >= 98)
 		}
 		else
 		{
-			printf("%d", n);
-			printf("\n");
+			printf("%d, ", n);
 		}
 		n--;
 	}
