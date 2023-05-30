@@ -9,7 +9,7 @@
 /* betty style doc for function main goes there */
 void print_to_98(int n)
 {
-while (true)
+while (1)
 	{
 	if (n == 98)
         {
