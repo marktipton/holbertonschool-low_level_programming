@@ -9,18 +9,17 @@
 /* betty style doc for function main goes there */
 void print_to_98(int n)
 {
-if (n == 98)
-{
-printf("%d", n);
-_putchar('\n');
-}
-while (n != 98)
+while (true)
 	{
+	if (n == 98)
+        {
+        printf("%d", n);
+        _putchar('\n');
+        goto end;
+        }
 	if (n < 0)
 	{
-	_putchar('-');
-	n = -n;
-	printf("%d, ", n);
+	printf("-%d, ", n);
 	}
 	else
 	{
@@ -35,6 +34,7 @@ while (n != 98)
 	n++;
 	}
 	}
+end:;
 _putchar('\n');
 }
 
