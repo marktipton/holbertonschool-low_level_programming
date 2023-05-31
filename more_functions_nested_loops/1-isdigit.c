@@ -2,17 +2,21 @@
 #include <stdio.h>
 
 /**
- * main - check the code.
+ * _isdigit - check if character is an uppercase letter.
+ *
+ * @c: (integer ascii character to check)
  *
  * Return: Always 0.
  */
-int main(void)
+int _isdigit(int c)
 {
-    char c;
-
-    c = 'A';
-    printf("%c: %d\n", c, _isupper(c));
-    c = 'a';
-    printf("%c: %d\n", c, _isupper(c));
-    return (0);
+	if ((c >= '0') && (c <= '9'))
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
+	_putchar('\n');
 }
