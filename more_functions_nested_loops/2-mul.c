@@ -2,13 +2,14 @@
 #include <stdio.h>
 
 /**
- * main - check the code
+ * mul - multiply two integers
  *
  * Return: Always 0.
  */
-int main(void)
+int mul(int a, int b)
 {
-    printf("%d\n", mul(98, 1024));
-    printf("%d\n", mul(-402, 4096));
-    return (0);
+	int c = a * b;
+	_putchar(c + '0');
+	_putchar('\n');
+	return (0);
 }
