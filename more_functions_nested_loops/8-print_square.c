@@ -1,14 +1,31 @@
 #include "main.h"
 
 /**
- * main - check the code
+ * print_square - prints a square made out of ###
  *
+ * @size: size of square
  * Return: Always 0.
  */
-int main(void)
+void print_square(int size)
 {
-    print_square(2);
-    print_square(10);
-    print_square(0);
-    return (0);
+int length = size, width = size;
+
+if (size <= 0)
+{
+	_putchar('\n');
+}
+else
+{
+	while (length > 0)
+	{
+		while (width > 0)
+		{
+			_putchar('#');
+			width--;
+		}
+		_putchar('\n');
+		width = size;
+		length--;
+	}
+}
 }
