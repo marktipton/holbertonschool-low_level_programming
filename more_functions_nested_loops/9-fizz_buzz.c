@@ -11,7 +11,7 @@ int x = 0;
 
 while (x < 100)
 {
-	if ((x % 3) && (x % 5))
+	if ((x % 1))
 	{
 		printf("FizzBuzz ");
 	}
