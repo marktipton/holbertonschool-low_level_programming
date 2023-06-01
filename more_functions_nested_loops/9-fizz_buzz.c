@@ -29,5 +29,6 @@ while (x < 101)
 	}
 	x++;
 }
+printf("\n");
 return (0);
 }
