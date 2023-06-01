@@ -5,8 +5,15 @@
  *
  * Return: Always 0.
  */
-int main(void)
+void more_numbers(void)
 {
-    more_numbers();
-    return (0);
+	int x = 0, y;
+
+	while(x < 15)
+	{
+		y = (x * 10);
+		_putchar(y + '0');
+		x++;
+	}
+	_putchar('\n');
 }
