@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
  * main - check the code
  *
@@ -7,8 +7,26 @@
  */
 int main(void)
 {
-    print_square(2);
-    print_square(10);
-    print_square(0);
-    return (0);
+int x = 0;
+
+while (x < 100)
+{
+	if ((x % 3) && (x % 5))
+	{
+		printf("FizzBuzz ");
+	}
+	else if (x % 3)
+	{
+		printf("Fizz ");
+	}
+	else if (x % 5)
+	{
+		printf("Buzz ");
+	}
+	else
+	{
+		printf("%d ", x);
+	}
+	x++;
+}
 }
