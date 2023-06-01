@@ -8,7 +8,7 @@
  */
 void print_diagonal(int n)
 {
-	int x, dif;
+	int x, placeholder;
 
 	if (n <= 0)
 	{
@@ -16,14 +16,18 @@ void print_diagonal(int n)
 	}
 	else
 	{
-		x = n;
-		dif = (x - n);
-		while (dif <= x)
+		x = 0;
+		placeholder = n;
+		while (n > 0)
 		{
-			_putchar(' ');
+			while((x > 0) && (x <= placeholder))
+			{
+				_putchar(' ');
+			}
+			x++;
 			n--;
+			_putchar(92);
+			_putchar('\n');
 		}
-		_putchar(92);
-		_putchar('\n');
 	}
 }
