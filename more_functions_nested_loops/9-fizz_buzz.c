@@ -7,9 +7,9 @@
  */
 int main(void)
 {
-int x = 0;
+int x = 1;
 
-while (x < 100)
+while (x < 101)
 {
 	if (x % 15 == 0)
 	{
