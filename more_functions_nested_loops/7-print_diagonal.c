@@ -1,15 +1,29 @@
 #include "main.h"
 
 /**
- * main - check the code
+ * print_diagonal - prints a diagonal line using backslashes
  *
+ * @n: (number of backslashes)
  * Return: Always 0.
  */
-int main(void)
+void print_diagonal(int n)
 {
-    print_diagonal(0);
-    print_diagonal(2);
-    print_diagonal(10);
-    print_diagonal(-4);
-    return (0);
+	int x, dif;
+
+	if (n <= 0)
+	{
+		_putchar('\n');
+	}
+	else
+	{
+		x = n;
+		dif = (x - n);
+		while (dif <= x)
+		{
+			_putchar(' ');
+			n--;
+		}
+		_putchar('\');
+		_putchar('\n');
+	}
 }
