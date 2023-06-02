@@ -9,13 +9,13 @@
  */
 void print_triangle(int size)
 {
-int x, y;
+int x, y, z;
 
 if (size <= 0)
 {
 	_putchar('\n');
 }
-else 
+else
 {
 	x = 1;
 	while (x <= size)
@@ -25,10 +25,14 @@ else
 		{
 			_putchar(' ');
 			y--;
-			
 		}
+		z = x;
+		while (z > 0)
+		{
 		_putchar('#');
-		_putchar('\n'); 
+		z--;
+		}
+		_putchar('\n');
 		x++;
 	}
 }
