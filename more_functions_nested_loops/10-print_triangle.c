@@ -17,18 +17,19 @@ if (size <= 0)
 }
 else 
 {
-	y = n;
-	while ((n - y + 1) < n)
+	x = 1;
+	while (x <= size)
 	{
-		while (x > 0)
+		y = size - x;
+		while (y > 0)
 		{
-			x = n - 1;
-			_putchar(' '); 
-			x = x - 1;
+			_putchar(' ');
+			y--;
+			
 		}
 		_putchar('#');
-		y = y - 1;
-
+		_putchar('\n'); 
+		x++;
 	}
 }
 }
