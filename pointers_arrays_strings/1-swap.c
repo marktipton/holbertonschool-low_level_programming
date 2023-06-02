@@ -2,8 +2,10 @@
 #include <stdio.h>
 
 /**
- * swap_int - swaps the values of integers a and b 
+ * swap_int - swaps the values of integers a and b
  *
+ * @a: swap var 1
+ * @b: swap var 2
  * Return: Always 0.
  */
 void swap_int(int *a, int *b)
