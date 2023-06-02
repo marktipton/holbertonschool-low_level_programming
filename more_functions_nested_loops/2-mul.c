@@ -9,14 +9,5 @@
 int mul(int a, int b)
 {
 	int c = a * b;
-	if (c < 0)
-	{
-		_putchar('-');
-		while (c <= 0)
-		{
-		_putchar(c);
-		_putchar('\n');
-		}
-	}
-	return (0);
+	return (c);
 }
