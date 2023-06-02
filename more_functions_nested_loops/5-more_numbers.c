@@ -13,11 +13,11 @@ while (x < 10)
 {
 	while (y < 15)
 	{
-		_putchar(y + '0');
 		if (y > 9)
 		{
-			_putchar((y % 10) + '0');
+			_putchar((y / 10) + '0');
 		}
+		_putchar((y % 10) + '0');
 		y++;
 	}
 	_putchar('\n');
