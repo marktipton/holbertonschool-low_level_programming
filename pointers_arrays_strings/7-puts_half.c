@@ -1,15 +1,21 @@
 #include "main.h"
-
+#include <string.h>
 /**
  * puts_half - prints half of string
  *
+ * @str: string in question
  * Return: Always 0.
  */
 void puts_half(char *str)
 {
-    char *str;
+int n;
+int length = strlen(str);
 
-    str = "0123456789";
-    puts_half(str);
-    return (0);
+n = length / 2; 
+while (n != '\0')
+{
+	_putchar(str[n]);
+	n++;
+}
+_putchar('\n');
 }
