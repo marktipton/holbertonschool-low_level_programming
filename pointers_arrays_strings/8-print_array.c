@@ -1,19 +1,26 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
  * print_array - prints an array of integers
  *
+ * @a: idk
+ * @n: number of elements in the array
  * Return: Always 0.
  */
 void print_array(int *a, int n)
 {
-    int array[5];
+	int i = 0;
 
-    array[0] = 98;
-    array[1] = 402;
-    array[2] = -198;
-    array[3] = 298;
-    array[4] = -1024;
-    print_array(array, 5);
-    return (0);
+	if (n <= 0)
+	{
+		putchar('\n');
+		return;
+	}
+	while (i < n)
+	{
+		printf("%d, ", a[i]);
+		i++;
+		a++;
+	}
+putchar('\n');
 }
