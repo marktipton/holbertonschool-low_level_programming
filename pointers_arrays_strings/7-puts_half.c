@@ -12,7 +12,7 @@ int n;
 int length = strlen(str);
 
 n = length / 2; 
-while (n != '\0')
+while (str[n] != '\0')
 {
 	_putchar(str[n]);
 	n++;
