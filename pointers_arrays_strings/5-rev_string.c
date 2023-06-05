@@ -13,6 +13,7 @@ void rev_string(char *s)
 	int lngth = strlen(s);
 	int begin = 0;
 	int end = lngth - 1;
+
 	while (end > begin)
 	{
 		char placeholder = s[begin];
