@@ -13,11 +13,11 @@ int length = strlen(str);
 
 if (length % 2)
 {
-n = length / 2;
+n = (length / 2) + 1;
 }
 else
 {
-n = (length / 2) + 1;
+n = (length / 2);
 }
 while (str[n] != '\0')
 {
