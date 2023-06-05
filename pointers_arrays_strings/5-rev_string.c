@@ -10,11 +10,15 @@
  */
 void rev_string(char *s)
 {
-        if (*s != '\0')
-        {
-		rev_string(s + 1);
-                _putchar(*s);
-        }
-        _putchar('\n');
-
+	int lngth = strlen(s);
+	int begin = 0;
+	int end = lngth - 1;
+	while (end > begin)
+	{
+		char placeholder = s[begin];
+		s[begin] = s[end];
+		s[end] = placeholder;
+		begin++;
+		end--;
+	}
 }
