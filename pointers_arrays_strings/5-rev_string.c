@@ -10,18 +10,11 @@
  */
 void rev_string(char *s)
 {
-        static int i, len, temp;
-	len = strlen(s);
-
-	if (i < len/2)
+        if (*s != '\0')
         {
-                temp = s[i];
-		s[i] = s[len - i - 1];
-		temp = s[len - i - 1];
-		i++;
-		rev_string(s);
-	}
+		rev_string(s + 1);
+                _putchar(*s);
+        }
         _putchar('\n');
-}
 
 }
