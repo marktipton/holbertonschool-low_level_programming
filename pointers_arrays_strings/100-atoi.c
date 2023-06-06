@@ -35,5 +35,5 @@ while (s[i] != '\0')
 		break;
 	}
 }
-	return lessthanzero * result;
+	return lessthanzero * number;
 }
