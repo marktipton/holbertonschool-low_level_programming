@@ -1,5 +1,7 @@
 #include "main.h"
 #include <stdio.h>
+#include <ctype.h>
+#include <string.h>
 
 /**
  * _atoi - converst a string to an integer
@@ -8,23 +10,22 @@
  */
 int _atoi(char *s)
 {
-    int nb;
+	int i = 0;
+	int nb = 0;
 
-    nb = _atoi("98");
-    printf("%d\n", nb);
-    nb = _atoi("-402");
-    printf("%d\n", nb);
-    nb = _atoi("          ------++++++-----+++++--98");
-    printf("%d\n", nb);
-    nb = _atoi("214748364");
-    printf("%d\n", nb);
-    nb = _atoi("0");
-    printf("%d\n", nb);
-    nb = _atoi("Suite 402");
-    printf("%d\n", nb);
-    nb = _atoi("         +      +    -    -98 Battery Street; San Francisco, CA 94111 - USA             ");
-    printf("%d\n", nb);
-    nb = _atoi("---++++ -++ Sui - te -   402 #cisfun :)");
-    printf("%d\n", nb);
-    return (0);
+if (s[0]
+while (s[i] != '\0')
+{
+	if ((s[i] > 48) && (s[i] < 57))
+	{
+		while((s[i]) > 48) && (s[i])
+		{
+			nb = nb * 10 + (s[i] - 48);					
+			i++;
+		}	
+		return;
+	}
+
+}
+	return (0);
 }
