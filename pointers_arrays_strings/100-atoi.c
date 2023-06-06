@@ -25,6 +25,10 @@ while (s[i] != '\0')
 	{
 		number = number * 10 + (s[i] - '0');
 		i++;
+		if ((s[i] <= 48) || (s[i] >= 57))
+		{
+			break;
+		}
 	}
 	else
 	{
