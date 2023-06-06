@@ -6,25 +6,21 @@
 /**
  * _atoi - converst a string to an integer
  *
+ * @s: string to turn into int
  * Return: Always 0.
  */
 int _atoi(char *s)
 {
 	int i = 0;
-	int lessthanzero = 1;
+	int lessthanzero = 0;
 	int number = 0;
 
-if (s[0] == '-')
-{
-	lessthanzero = -1;
-	i++;
-}
-else if (s[0] == '+')
-{
-i++;
-}
 while (s[i] != '\0')
 {
+	if (s[i] == '-')
+	{
+		lessthanzero++;
+	}
 	if ((s[i] >= 48) && (s[i] <= 57))
 	{
 		number = number * 10 + (s[i] - '0');
@@ -32,8 +28,16 @@ while (s[i] != '\0')
 	}
 	else
 	{
-		break;
+		i++;
 	}
 }
-	return lessthanzero * number;
+if (lessthanzero % 2 == 0)
+{
+	lessthanzero = 1;
+}
+else
+{
+	lessthanzero = -1;
+}
+	return (lessthanzero * number);
 }
