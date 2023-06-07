@@ -4,18 +4,21 @@
 /**
  * _strncpy - copies a string
  *
+ * @dest: copy destination
+ * @src: copy source
+ * @n: number of bytes to be copied
  * Return: Always 0.
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-n = 0;
+int i = 0;
 
-while (src[n] != '\0')
+while ((src[i] != '\0') && (i < n))
 {
-dest[n] = src[n];
-n++;
+dest[i] = src[i];
+i++;
 }
-dest[n] = '\0';
+dest[i] = '\0';
 return (dest);
 
 }
