@@ -6,13 +6,16 @@
  *
  * Return: Always 0.
  */
-char *string_toupper(char *)
+char *string_toupper(char *s)
 {
-    char str[] = "Look up!\n";
-    char *ptr;
+	int i = 0;
 
-    ptr = string_toupper(str);
-    printf("%s", ptr);
-    printf("%s", str);
-    return (0);
+	while (s[i] != '\0')
+	{
+		if ((s[i] + '0' >= 97) && (s[i] + '0' <= 122))
+		{
+			s[i] = s[i] - 32;
+		}
+	}
+	return (s);
 }
