@@ -2,11 +2,11 @@
 #include <stdio.h>
 
 /**
- * main - check the code
+ * string_toupper - changes all lowercase letters to uppercase
  *
  * Return: Always 0.
  */
-int main(void)
+char *string_toupper(char *)
 {
     char str[] = "Look up!\n";
     char *ptr;

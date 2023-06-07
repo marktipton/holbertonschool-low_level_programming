@@ -2,11 +2,11 @@
 #include <stdio.h>
 
 /**
- * main - check the code
+ * cap_string - capitalizes all words in a string
  *
  * Return: Always 0.
  */
-int main(void)
+char *cap_string(char *)
 {
     char str[] = "Expect the best. Prepare for the worst. Capitalize on what comes.\nhello world! hello-world 0123456hello world\thello world.hello world\n";
     char *ptr;

@@ -6,7 +6,7 @@
  *
  * Return: Always 0.
  */
-int main(void)
+char *_strncpy(char *dest, char *src, int n)
 {
     char s1[98];
     char *ptr;

@@ -2,11 +2,11 @@
 #include <stdio.h>
 
 /**
- * main - check the code
+ * _strncat - concatenates two strings
  *
  * Return: Always 0.
  */
-int main(void)
+char *_strncat(char *dest, char *src, int n)
 {
     char s1[98] = "Hello ";
     char s2[] = "World!\n";
