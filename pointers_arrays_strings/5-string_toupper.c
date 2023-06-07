@@ -3,7 +3,7 @@
 
 /**
  * string_toupper - changes all lowercase letters to uppercase
- *
+ *@s: array to be reversed
  * Return: Always 0.
  */
 char *string_toupper(char *s)
