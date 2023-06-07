@@ -4,23 +4,25 @@
 /**
  * _strncat - concatenates two strings
  *
+ * @dest: string to be added to
+ * @src: string to be added
  * Return: Always 0.
  */
 char *_strncat(char *dest, char *src, int n)
 {
-    char s1[98] = "Hello ";
-    char s2[] = "World!\n";
-    char *ptr;
+        int i = 0, j = 0;
+	
+        while (dest[i] != '\0')
+        {
+                i++;
+        }
+        while (j < n)
+        {
+                dest[i] = src[j];
+                j++;
+                i++;
+        }
+        dest[i] = '\0';
+        return (dest);
 
-    printf("%s\n", s1);
-    printf("%s", s2);
-    ptr = _strncat(s1, s2, 1);
-    printf("%s\n", s1);
-    printf("%s", s2);
-    printf("%s\n", ptr);
-    ptr = _strncat(s1, s2, 1024);
-    printf("%s", s1);
-    printf("%s", s2);
-    printf("%s", ptr);
-    return (0);
 }
