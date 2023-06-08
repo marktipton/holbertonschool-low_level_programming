@@ -15,6 +15,10 @@ int size = 13;
 
 while (s[i] != '\0')
 {
+	if ((i == 0) && (s[i] >= 97 && s[i] <= 122))
+	{
+		s[i] = s[i] - 32;
+	}
 	j = 0;
 	while (j < size)
 	{
