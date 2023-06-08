@@ -2,17 +2,30 @@
 #include <stdio.h>
 
 /**
- * main - check the code for
+ * leet - coverts string to leet
  *
  * Return: Always 0.
  */
-int main(void)
+char *leet(char *s)
 {
-    char s[] = "Expect the best. Prepare for the worst. Capitalize on what comes.\n";
-    char *p;
 
-    p = leet(s);
-    printf("%s", p);
-    printf("%s", s);
-    return (0);
+int i = 0, j = 0;
+char Aletters[] = {97, 65, 101, 69, 111, 79, 116, 84, 108, 76};
+char Anumbers[] = {52, 51, 48, 55, 49, 52, 51, 48, 55, 49};
+int size = 10;
+
+while (s[i] != '\0')
+{
+        j = 0;
+        while (j < size - 1)
+        {
+        if (s[i] == Aletters[j])
+        {
+		s[i] = Anumbers[j];
+        }
+        j++;
+        }
+        i++;
+}
+return (s);
 }
