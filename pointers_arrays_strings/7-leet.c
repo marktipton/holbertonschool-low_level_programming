@@ -19,7 +19,7 @@ int size = 5;
 while (s[i] != '\0')
 {
 	j = 0;
-	while (j < size - 1)
+	while (j < size)
 	{
 		if (s[i] == Alower[j] || s[i] == Aupper[j])
 		{
