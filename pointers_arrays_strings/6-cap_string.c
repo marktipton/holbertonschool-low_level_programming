@@ -15,15 +15,16 @@ int size = 13;
 
 while (s[i] != '\0')
 {
+	j = 0;
 	while (j < size)
 	{
 	if (s[i] == wordsep[j])
 	{
-		if (s[i+1] >= 97 && s[i+1] <= 122)
+		if (s[i + 1] >= 97 && s[i + 1] <= 122)
 		{
-			s[i+1] = s[i+1] - 32;
-		}	
-		
+			s[i + 1] = s[i + 1] - 32;
+		}
+
 	}
 	j++;
 	}
