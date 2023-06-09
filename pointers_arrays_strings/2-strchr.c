@@ -2,20 +2,27 @@
 #include <stdio.h>
 
 /**
- * main - check the code
- *
+ * _strchr - locates a character in a string
+ *@s: string in question
+ *@c: character to locate
  * Return: Always 0.
  */
-int main(void)
+char *_strchr(char *s, char c)
 {
-    char *s = "hello";
-    char *f;
+int i = 0;
 
-    f = _strchr(s, 'l');
-
-    if (f != NULL)
-    {
-        printf("%s\n", f);
-    }
-    return (0);
+while (s[i] != '\0')
+{
+	if (s[i] == c)
+	{
+		return (s);
+		break;
+	}
+	i++; 
+}
+	if (s[i] == '\0')
+	{
+		return (NULL);
+	}
+return (0);
 }
