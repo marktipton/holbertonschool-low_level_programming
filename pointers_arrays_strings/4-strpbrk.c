@@ -2,17 +2,13 @@
 #include <stdio.h>
 
 /**
- * main - check the code
+ * _strpbrk - searches a string for any of a set of bytes
  *
+ *@s: string
+ *@accept: acceptable characters
  * Return: Always 0.
  */
-int main(void)
+char *_strpbrk(char *s, char *accept)
 {
-    char *s = "hello, world";
-    char *f = "world";
-    char *t;
 
-    t = _strpbrk(s, f);
-    printf("%s\n", t);
-    return (0);
 }

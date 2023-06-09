@@ -22,6 +22,7 @@ unsigned int _strspn(char *s, char *accept)
 			{
 				len++;
 			}
+			if (s[i + 1] !
 		j++;
 		}
 	i++;
