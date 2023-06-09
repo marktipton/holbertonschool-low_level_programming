@@ -9,14 +9,14 @@
  *
  * Return: Nothing.
  */
-char *_memcpy(char *dest, char src, unsigned int n)
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
 unsigned int i = 0;
 
 while ((dest[i] != '\0') && (i < n))
 {
-        dest[i] = b;
-        i++;
+	dest[i] = src[i];
+	i++;
 }
 return (dest);
 }
