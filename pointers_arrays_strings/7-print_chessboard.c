@@ -2,9 +2,9 @@
 #include <stdio.h>
 
 /**
- * print_chessboard - prints a chessboard in starting position with pieces labeled
+ * print_chessboard - prints a chessboard in starting position with pieces
  *
- * @a: two dimensional array 
+ * @a: two dimensional array
  * Return: Always 0.
  */
 void print_chessboard(char (*a)[8])
