@@ -2,17 +2,35 @@
 #include <stdio.h>
 
 /**
- * main - check the code
+ * _strstr - locates a substring
+ *
+ * @needle: the substring
+ *
+ * @haystack: the string to search
  *
  * Return: Always 0.
  */
-int main(void)
+char *_strstr(char *haystack, char *needle)
 {
-    char *s = "hello, world";
-    char *f = "world";
-    char *t;
+        int i = 0;
+        int j = 0;
 
-    t = _strstr(s, f);
-    printf("%s\n", t);
-    return (0);
+        while (s[i] != '\0')
+        {
+                while (accept[j] != '\0')
+                {
+                        if (s[i] == accept[j])
+                        {
+                                return (s);
+                        }
+                                        j++;
+                }
+                i++;
+        }
+        if (s[i] == '\0')
+        {
+        return (NULL);
+        }
+        return (0);
 }
+
