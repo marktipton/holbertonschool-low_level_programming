@@ -13,7 +13,6 @@ void print_diagsums(int *a, int size)
 int i = 0;
 int sumdiag1 = 0;
 int sumdiag2 = 0;
-int sumdiag;
 
 while (i < size)
 {
@@ -21,6 +20,5 @@ while (i < size)
 	sumdiag2 = sumdiag2 + a[i * size + (size - 1 - i)];
 	i++;
 }
-sumdiag = sumdiag1 + sumdiag2;
-printf("%d", sumdiag);
+printf("%d, %d", sumdiag1, sumdiag2);
 }
