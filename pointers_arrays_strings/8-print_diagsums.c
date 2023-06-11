@@ -11,22 +11,16 @@
 void print_diagsums(int *a, int size)
 {
 int i = 0;
-int j = 0;
-int sumdiag = 0;
+int sumdiag1 = 0;
+int sumdiag2 = 0;
+int sumdiag;
 
 while (i < size)
 {
-	sumdiag = sumdiag + a[i][j];
-	j++;
+	sumdiag1 = sumdiag1 + a[i * size + i];
+	sumdiag2 = sumdiag2 + a[i * size + (size - 1 - i)];
 	i++;
 }
-i = 0;
-while (i < size)
-{
-	sumdiag = sumdiag + a[i][j];
-	j--;
-	i++;
-
-}
+sumdiag = sumdiag1 + sumdiag2;
 printf("%d", sumdiag);
 }
