@@ -20,5 +20,5 @@ while (i < size)
 	sumdiag2 = sumdiag2 + a[i * size + (size - 1 - i)];
 	i++;
 }
-printf("%d, %d", sumdiag1, sumdiag2);
+printf("%d, %d\n", sumdiag1, sumdiag2);
 }
