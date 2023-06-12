@@ -16,13 +16,13 @@ while (s[i] != '\0')
 {
 	if (s[i] == c)
 	{
-		return (s);
+		return (&s[i]);
 	}
 	i++;
 }
-if (s[i] == '\0')
+if (s[i] == c)
 {
-	return (0);
+	return (&s[i]);
 }
-return (0);
+return (NULL);
 }
