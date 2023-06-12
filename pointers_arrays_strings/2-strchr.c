@@ -22,7 +22,7 @@ while (s[i] != '\0')
 }
 if (s[i] == '\0')
 {
-	return (NULL);
+	return (0);
 }
 return (0);
 }
