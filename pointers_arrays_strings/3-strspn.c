@@ -22,14 +22,16 @@ unsigned int _strspn(char *s, char *accept)
 			if (s[i] == accept[j])
 			{
 				len++;
-				break;
 			}
-			
-				
+			if (s[i + 1] != accept[j])
+			{
+				goto end;
+			}
 		j++;
 		}
+
 	i++;
 	}
-
+	end:;
 	return (len);
 }
