@@ -14,5 +14,5 @@ if (i < len)
 {
 	_putchar(s[i]);
 }
-_puts_recursion(s[i + 1]);
+_puts_recursion(s + 1);
 }
