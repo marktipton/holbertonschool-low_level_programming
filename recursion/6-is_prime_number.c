@@ -2,29 +2,12 @@
 #include <stdio.h>
 
 /**
- * main - check the code
- *
+ * is_prime_number - returns 1 if the input is a prime number
+ *@n: number
  * Return: Always 0.
  */
-int main(void)
+int is_prime_number(int n)
 {
-    int r;
-
-    r = is_prime_number(1);
-    printf("%d\n", r);
-    r = is_prime_number(1024);
-    printf("%d\n", r);
-    r = is_prime_number(16);
-    printf("%d\n", r);
-    r = is_prime_number(17);
-    printf("%d\n", r);
-    r = is_prime_number(25);
-    printf("%d\n", r);
-    r = is_prime_number(-1);
-    printf("%d\n", r);
-    r = is_prime_number(113);
-    printf("%d\n", r);
-    r = is_prime_number(7919);
-    printf("%d\n", r);
-    return (0);
+	
+	return (0);
 }
