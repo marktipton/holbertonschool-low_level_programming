@@ -8,6 +8,13 @@
  */
 int is_prime_number(int n)
 {
-	
+	int i;
+
+	i * i = n;
+
+	if ()
+	{
+		return (1);
+	}	
 	return (0);
 }
