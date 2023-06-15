@@ -2,14 +2,9 @@
 #include <stdio.h>
 
 /**
- * calc - returns square root if perfect square
- * @n: integer
- * @i: square root of n
- *
- * Return: Always 0.
- *
- * _sqrt_recursion - returns natural square root of number
+ * calc - returns square root of number if  perfect square
  *@n: number
+ *@i: square root of number
  * Return: Always 0.
  */
 int calc(int n, int i)
@@ -27,6 +22,13 @@ else
 	return (calc(n, i + 1));
 }
 }
+
+/**
+* _sqrt_recursion - returns square root if perfect square
+* @n: integer
+*
+*Return: always 0.
+*/
 
 int _sqrt_recursion(int n)
 {
