@@ -6,8 +6,10 @@
  * @n: integer
  * @i: square root of n
  *
- *
- *
+ * Return: Always 0.
+ */
+
+/**
  * _sqrt_recursion - returns natural square root of number
  *@n: number
  * Return: Always 0.
@@ -18,21 +20,25 @@ if (i * i == n)
 {
 	return (i);
 }
-if (i * i > n)
+else if (i * i > n)
 {
 	return (-1);
 }
-calc(n, i + 1);
-return (0);
+else
+{
+	return (calc(n, i + 1));
+}
 }
 
 int _sqrt_recursion(int n)
 {
 if (n > 0)
 {
-        return (calc(n, 0));
+	return (calc(n, 0));
 }
-
-return (-1);
+else
+{
+	return(-1);
+}
 }
 
