@@ -7,9 +7,7 @@
  * @i: square root of n
  *
  * Return: Always 0.
- */
-
-/**
+ *
  * _sqrt_recursion - returns natural square root of number
  *@n: number
  * Return: Always 0.
@@ -38,7 +36,7 @@ if (n > 0)
 }
 else
 {
-	return(-1);
+	return (-1);
 }
 }
 
