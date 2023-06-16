@@ -5,8 +5,8 @@
  *
  *main - multiplies two numbers
  *
- *@x: multiplier
- *@y: also multiplier
+ *@argc: number of arguments
+ *@argv: array of argument strings
  *
  * Return: always 0.
  */
