@@ -8,7 +8,7 @@
  *
  *
  */
-int my_name_is(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 int i;
 
