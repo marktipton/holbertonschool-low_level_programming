@@ -2,12 +2,12 @@
 #include <stdio.h>
 
 /**
- *main - prints name of function
+ * main - prints name of function
  *
  * @argc: total number of arguments
- * @argv: array of pointers 
+ * @argv: array of pointers
  *
- *
+ * Return: always 0.
  */
 int main(int argc, char *argv[])
 {
