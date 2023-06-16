@@ -1,7 +1,8 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- *my_name_is - prints name of function
+ *main - prints name of function
  *
  * @argc: total number of arguments
  * @argv: array of pointers 
@@ -10,12 +11,8 @@
  */
 int main(int argc, char *argv[])
 {
-int i;
+	(void)argc;
 
-for (i = 0; i < argc; i++)
-{
-	_putchar(*argv[i]);
-}
-_putchar ('\n');
-return (0);
+	printf("%s\n", argv[0]);
+	return (0);
 }
