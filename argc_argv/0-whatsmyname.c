@@ -3,13 +3,19 @@
 /**
  *my_name_is - prints name of function
  *
- * @argc: 
- * @argv:
+ * @argc: total number of arguments
+ * @argv: array of pointers 
  *
  *
  */
-void my_name_is(int argc, char argv)
+int my_name_is(int argc, char *argv[])
 {
-_putchar();
+int i;
+
+for (i = 0; i < argc; i++)
+{
+	_putchar(*argv[i]);
+}
 _putchar ('\n');
+return (0);
 }
