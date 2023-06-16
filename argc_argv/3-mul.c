@@ -1,8 +1,7 @@
 #include "main.h"
 #include <stdio.h>
-
+#include <stdlib.h>
 /**
- *
  *main - multiplies two numbers
  *
  *@argc: number of arguments
@@ -13,8 +12,8 @@
 
 int main(int argc, char *argv[])
 {
-	int x = ('0' + *argv[argc - 2]);
-	int y = ('0' + *argv[argc - 1]);
+	int x = atoi(argv[1]);
+	int y = atoi(argv[2]);
 	int z = x * y;
 
 
