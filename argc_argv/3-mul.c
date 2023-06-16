@@ -13,8 +13,8 @@
 
 int main(int argc, char *argv[])
 {
-	int x = *argv[argc - 2];
-	int y = *argv[argc - 1];
+	int x = (*argv[argc - 2] + '0');
+	int y = (*argv[argc - 1] + '0');
 	int z = x * y;
 
 
