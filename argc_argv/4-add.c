@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 	while (i < argc)
 	{
 		num = atoi(argv[i]);
-		if ((num < 48) || (num > 57))
+		if ((*argv[i] < 48) || (*argv[i] > 57))
 		{
 			printf("Error\n");
 			return (1);
@@ -26,6 +26,6 @@ int main(int argc, char *argv[])
 		i++;
 	}
 	printf("%d\n", sum);
-        return (0);
+	return (0);
 
 }
