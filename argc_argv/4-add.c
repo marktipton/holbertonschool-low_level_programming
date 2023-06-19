@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
- *main - adds positive integers. 
+ *main - adds positive integers.
  *
  *@argc: number of arguments
  *@argv: array of argument strings
@@ -17,17 +17,15 @@ int main(int argc, char *argv[])
 	while (i < argc)
 	{
 		num = atoi(argv[i]);
-        	if ((num < 48) || (num > 57))
-        	{
-                	printf("Error\n");
-                	return (1);
-        	}
+		if ((num < 48) || (num > 57))
+		{
+			printf("Error\n");
+			return (1);
+		}
 		sum += num;
 		i++;
 	}
-
 	printf("%d\n", sum);
-        
-	return (0);
-	
+        return (0);
+
 }
