@@ -12,15 +12,19 @@
 
 int main(int argc, char *argv[])
 {
-	int i = 1, num, sum = 0;
+	int i = 1, j = 0, num, sum = 0;
 
 	while (i < argc)
 	{
 		num = atoi(argv[i]);
-		if ((*argv[i] < 48) || (*argv[i] > 57))
+		while (argv[i][j] != '\0')
 		{
-			printf("Error\n");
-			return (1);
+			if ((argv[i][j] < 48) || (argv[i][j] > 57))
+			{
+				printf("Error\n");
+				return (1);
+			}
+			j++;
 		}
 		sum += num;
 		i++;
