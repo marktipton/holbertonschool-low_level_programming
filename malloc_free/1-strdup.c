@@ -3,21 +3,29 @@
 #include <stdlib.h>
 
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * _strdup - return duplicate of string
+ *@str: string to be copied
+ * Return: NULL if str = NULL or the pointer to the new memory
  */
-int main(void)
+char *_strdup(char *str)
 {
-    char *s;
+	int i = 0;
+	char *stringcopy;
 
-    s = _strdup("Duplicated");
-    if (s == NULL)
-    {
-        printf("failed to allocate memory\n");
-        return (1);
-    }
-    printf("%s\n", s);
-    free(s);
-    return (0);
+	while (str[i] != '\0')
+	{
+		i++;
+	}
+	stringcopy = malloc(i * sizeof(char));
+	free(stringcopy);
+	
+	if (stringcopy == NULL)
+	{
+		return (NULL);
+	}
+	else
+	{
+		return (stringcopy);
+	}
+
 }
