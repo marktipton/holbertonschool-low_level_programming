@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 /**
  * _strdup - return duplicate of string
@@ -10,23 +11,24 @@
 char *_strdup(char *str)
 {
 	int i = 0;
-	char *stringcopy = NULL;
+	char *stringcopy;
+	int len;
 
-	while (str[i] != '\0')
+	len = strlen(str);
+        if (str == NULL)
+        {
+                return (NULL);
+        }
+	stringcopy = malloc(len * sizeof(char));
+	while (i < len)
 	{
 		stringcopy[i] = str[i];
 		i++;
 	}
-	stringcopy[i] = '\0';
-	stringcopy = malloc((i + 1) * sizeof(char));
-
 	if (stringcopy == NULL)
 	{
 		return (NULL);
 	}
-	else
-	{
-		return (stringcopy);
-	}
+	return (stringcopy);
 
 }
