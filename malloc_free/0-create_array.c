@@ -11,5 +11,18 @@
  */
 char *create_array(unsigned int size, char c)
 {
+	int i = 0, j;
+
+	while (i < size)
+	{
+		j = 0;
+		while (j < size)
+		{
+			_putchar(c);
+			j++;
+		}
+		_putchar('\n');
+		i++;
+	}
 
 }
