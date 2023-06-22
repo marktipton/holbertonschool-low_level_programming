@@ -4,7 +4,7 @@
 
 /**
  * alloc_grid - prints a grid of integers
- * 
+ *
  * @width: width of the grid
  * @height: height of the grid
  *
@@ -15,7 +15,7 @@ int **alloc_grid(int width, int height)
 	int i = 0;
 	int j;
 	int **mcgriddle = malloc(width * height * sizeof(int));
-	
+
 	if (mcgriddle == NULL)
 		return (NULL);
 	if (width <= 0 || height <= 0)
@@ -30,5 +30,6 @@ int **alloc_grid(int width, int height)
 		}
 		i++;
 	}
+	free(mcgriddle);
 	return (mcgriddle);
 }
