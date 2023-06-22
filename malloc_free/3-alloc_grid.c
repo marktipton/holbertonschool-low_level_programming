@@ -40,6 +40,5 @@ int **alloc_grid(int width, int height)
 		}
 		i++;
 	}
-	free(mcgriddle);
 	return (mcgriddle);
 }
