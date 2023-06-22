@@ -14,19 +14,29 @@ int **alloc_grid(int width, int height)
 {
 	int i = 0;
 	int j;
-	int **mcgriddle = malloc(width * height * sizeof(int));
+	int **mcgriddle = malloc(height * sizeof(int *));
 
 	if (width <= 0 || height <= 0)
 		return (NULL);
 	if (mcgriddle == NULL)
 		return (NULL);
-	while (i < width)
+	while (i < height)
 	{
 		j = 0;
-		while (j < height)
+		mcgriddle[i] = malloc(width * sizeof(int));
+		if (mcgriddle[i] == NULL)
+		{
+			while (j < i)
+			{
+				free(mcgriddle[j]);
+				j++;
+			}
+			free(mcgriddle);
+			return (NULL);
+		}
+		for (j = 0; j < width; j++)
 		{
 			mcgriddle[i][j] = 0;
-			j++;
 		}
 		i++;
 	}
