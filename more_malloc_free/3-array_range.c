@@ -4,44 +4,28 @@
 #include <string.h>
 
 /**
- * simple_print_buffer - prints buffer in hexa
- * @buffer: the address of memory to print
- * @size: the size of the memory to print
+ * array_range - creates an array of integers
+ * @min: the address of memory to print
+ * @max: the size of the memory to print
  *
- * Return: Nothing.
+ * Return: pointer to array or NULL if malloc fails||min > max
  */
-void simple_print_buffer(int *buffer, unsigned int size)
+int *array_range(int min, int max)
 {
-    unsigned int i;
+	int *ptr;
+	int i;
 
-    i = 0;
-    while (i < size)
-    {
-        if (i % 10)
-        {
-            printf(" ");
-        }
-        if (!(i % 10) && i)
-        {
-            printf("\n");
-        }
-        printf("0x%02x", buffer[i]);
-        i++;
-    }
-    printf("\n");
-}
+	if (min > max)
+	{	
+		return (NULL);
+	}
+	ptr = malloc((max - min) * sizeof(int));
+	if (ptr == NULL)
+		return (NULL);
 
-/**
- * main - check the code
- *
- * Return: Always 0.
- */
-int main(void)
-{
-    int *a;
-
-    a = array_range(0, 10);
-    simple_print_buffer(a, 11);
-    free(a);
-    return (0);
+	for (i = min; i <= max; i++)
+	{
+		ptr[i] = i;
+	}
+	return (ptr);
 }
