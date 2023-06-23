@@ -11,7 +11,8 @@
 void *malloc_checked(unsigned int b)
 {
 	void *ptb;
-       	ptb = malloc(b);
+	
+	ptb = malloc(b);
 
 	if (ptb == NULL)
 		exit(98);
