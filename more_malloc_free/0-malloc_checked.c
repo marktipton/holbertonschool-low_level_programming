@@ -11,7 +11,7 @@
 void *malloc_checked(unsigned int b)
 {
 	void *ptb;
-	
+
 	ptb = malloc(b);
 
 	if (ptb == NULL)
