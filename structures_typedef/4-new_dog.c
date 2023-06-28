@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include "dog.h"
-#include "9-strcpy.c"
-#include "2-strlen.c"
+#include <stdlib.h>
 /**
  * new_dog - creates a new dog
  *@name: name of new dog
@@ -9,27 +8,28 @@
  *@owner: owner of new dog
  * Return: Always 0.
  */
+
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *dog = malloc(sizeof(dog_t)); 
-	if (dog == NULL)
-		return NULL;
-
-	_strcpy(dog->name, name);
-	if (dog->name == NULL)
-	{
-		free(dog);
+	dog_t *new_dog = malloc(sizeof(dog_t));
+	
+	if (new_dog == NULL)
 		return (NULL);
-	}	
+	
+	new_dog->name = malloc(strlen(name) + 1);
+	new_dog->owner = malloc(strlen(owner) + 1);
 
-	dog->age = age;
-
-	_strcpy(dog->owner, owner);
-	if (dog->owner == NULL)
+	if (new_dog->name == NULL || new_dog->owner == NULL)
 	{
-		free(dog->name);
-		free(dog);
+		free(new_dog->owner);
+		free(new_dog->name);
+		free(new_dog);
 		return (NULL);
-	}
-	return (dog);
+        }
+
+	strcpy(new_dog->owner, owner);
+	strcpy(new_dog->name, name);
+
+	new_dog->age = age;
+	return (new_dog);
 }
