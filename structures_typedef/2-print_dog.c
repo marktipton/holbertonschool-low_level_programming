@@ -1,18 +1,18 @@
 #include <stdio.h>
 #include "dog.h"
-
+#include <stdlib.h>
 /**
- * main - check the code
- *
+ * print_dog - check the code
+ *@d: pointer to dog struct
  * Return: Always 0.
  */
-int main(void)
+void print_dog(struct dog *d)
 {
-    struct dog my_dog;
 
-    my_dog.name = "Poppy";
-    my_dog.age = 3.5;
-    my_dog.owner = "Bob";
-    print_dog(&my_dog);
-    return (0);
+	if (d != NULL)
+	{
+		printf("%s\n", d->name ? d->name : "Name: (nil)");
+		printf("%.1f\n", d->age ? d->age : 0);
+		printf("%s\n", d->owner ? d->owner : "(nil)");
+	}
 }
