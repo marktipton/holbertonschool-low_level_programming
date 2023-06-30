@@ -15,10 +15,10 @@ if (cmp != NULL && array != NULL)
 {
 	if (size <= 0)
 		return (-1);
-	for (i = 0; i < size + 1; i++) 
+	for (i = 0; i < size + 1; i++)
 	{
 		if (cmp(array[i] == 1))
-			return (cmp(array[i]));
+			return (i);
 	}
 }
 	return (-1);
