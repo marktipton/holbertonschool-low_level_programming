@@ -2,12 +2,22 @@
 #include "function_pointers.h"
 
 /**
- * print_elem - prints an integer
- * @elem: the integer to print
+ * array_iterator - executes function given on each element of an array
+ * @array: array to execute function on
+ * @size: size of array
+ * @action: pointer to function to do on array elements
  *
  * Return: Nothing.
  */
-void print_elem(int elem)
+void array_iterator(int *array, size_t size, void (*action)(int))
 {
-    printf("%d\n", elem);
+	size_t i;
+
+	if (array != NULL && action != NULL)
+	{
+		for(i = 0; i < size; i++)
+		{
+			action(array[i]);
+		}
+	}
 }
