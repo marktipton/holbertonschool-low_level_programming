@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <stddef.h>
 /**
  *get_op_func - selects function to perform
  *
@@ -23,7 +24,7 @@ int (*get_op_func(char *s))(int, int)
 	int i;
 
 	i = 0;
-	while (ops[i].op != '\0' && strcmp(ops[i].op, s) != 0)
+	while (ops[i].op != NULL && strcmp(ops[i].op, s) != 0)
 	{
 		i++;
 	}
