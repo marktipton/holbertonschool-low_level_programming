@@ -22,7 +22,7 @@ int main(int argc, char **argv)
 	
 	operator = argv[2];
 	
-	if (get_op_func(operator) == NULL || strlen(argv[2]) != 1)
+	if (get_op_func(operator) == NULL)
 	{
 		printf("Error\n");
 		exit (99);
