@@ -1,12 +1,14 @@
 #include "variadic_functions.h"
-
+#include <stdarg.h>
+#include <stdlib.h>
+#include <stdio.h>
 /**
- * main - check the code
- *
+ * print_all - variadic function that prints any type
+ *@format: a list of types of arguments passed to function
  * Return: Always 0.
  */
-int main(void)
+void print_all(const char * const format, ...)
 {
-    print_all("ceis", 'B', 3, "stSchool");
-    return (0);
+	va_list(ap);
+
 }
