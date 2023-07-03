@@ -7,7 +7,7 @@
  *
  *@s: operator passed as argument to program
  *
- *
+ *Return: operation or NULL
  */
 
 int (*get_op_func(char *s))(int, int)

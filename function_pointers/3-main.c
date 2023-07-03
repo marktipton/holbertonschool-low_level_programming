@@ -26,13 +26,13 @@ int main(int argc, char **argv)
 	operator = argv[3];
 	num2 = atoi(argv[4]);
 	
-	if (get_op_func(operator) == NULL)
+	if (get_op_func(operator) == NULL || strlen(operator) > 1)
 	{
 		printf("Error\n");
 		exit (99);
 	}
 
-	if (num2 == 0 && (strcmp(operator, "&") == 0 || strcmp(operator, "%") == 0))
+	if (num2 == 0 && (strcmp(operator, "/") == 0 || strcmp(operator, "%") == 0))
 	{
 		printf("Error\n");
 		exit (100);
