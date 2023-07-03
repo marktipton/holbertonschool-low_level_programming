@@ -14,11 +14,11 @@ void print_all(const char * const format, ...)
 	unsigned int i;
 	char *ptr;
 
-	va_start(ap, format); 
-        i = 0;
+	va_start(ap, format);
+	i = 0;
 
-        while (format && format[i])
-        {
+	while (format && format[i])
+	{
 		switch (format[i])
 		{
 			case 'c':
@@ -38,7 +38,7 @@ void print_all(const char * const format, ...)
 					printf("(nil)");
 					break;
 				}
-				printf("%s", ptr); 
+				printf("%s", ptr);
 				break;
 		}
 		if ((format[i] == 'c' || format[i] == 'i' || format[i] == 'f' ||
