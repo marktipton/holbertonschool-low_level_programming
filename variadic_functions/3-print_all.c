@@ -30,7 +30,7 @@ void print_all(const char * const format, ...)
 				printf("%f", (float) va_arg(ap, double));
 				break;
 			case 's':
-				if (va_arg(ap, char *) == NULL)
+				if (!(va_arg(ap, char *)))
 				{
 					printf("(nil)");
 					break;
