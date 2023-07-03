@@ -22,13 +22,13 @@ int main(int argc, char **argv)
 	
 	operator = argv[2];
 	
-	if (get_op_func(operator) == NULL)
+	if (get_op_func(operator) == NULL || strlen(operator) != 1)
 	{
 		printf("Error\n");
 		exit (99);
 	}
 
-	if (atoi(argv[4]) == 0 && (*operator == '/' || *operator == '%'))
+	if (atoi(argv[3]) == 0 && (*operator == '/' || *operator == '%'))
 	{
 		printf("Error\n");
 		exit (100);
