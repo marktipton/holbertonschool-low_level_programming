@@ -35,5 +35,5 @@ int main(int argc, char **argv)
 
 	}
 	printf("%d\n", get_op_func(operator)(atoi(argv[1]), atoi(argv[3])));
-return(0);
+return (0);
 }
