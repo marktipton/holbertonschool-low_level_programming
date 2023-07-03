@@ -20,7 +20,7 @@ int main(int argc, char **argv)
 		exit (98);
 	}
 	
-	operator = argv[3];
+	operator = argv[2];
 	
 	if (get_op_func(operator) == NULL || strlen(operator) != 1)
 	{
@@ -34,6 +34,6 @@ int main(int argc, char **argv)
 		exit (100);
 		
 	}
-	printf("%d\n", get_op_func(operator)(atoi(argv[2]), atoi(argv[4])));
+	printf("%d\n", get_op_func(operator)(atoi(argv[1]), atoi(argv[3])));
 return(0);
 }
