@@ -34,6 +34,6 @@ int main(int argc, char **argv)
 		exit (100);
 		
 	}
-	printf("%d\n", get_op_func(operator)(atoi(argv[2]), atoi(argv[4]));
+	printf("%d\n", get_op_func(operator)(atoi(argv[2]), atoi(argv[4])));
 return(0);
 }
