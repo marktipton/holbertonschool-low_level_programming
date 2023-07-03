@@ -12,9 +12,12 @@ void print_all(const char * const format, ...)
 {
 	va_list(ap);
 	unsigned int i;
+	char *ptr;
 
 	va_start(ap, format); 
         i = 0;
+
+	ptr = va_arg(ap, char *);
 
         while (format && format[i])
         {
@@ -30,12 +33,12 @@ void print_all(const char * const format, ...)
 				printf("%f", (float) va_arg(ap, double));
 				break;
 			case 's':
-				if (!(va_arg(ap, char *)))
+				if (!ptr)
 				{
 					printf("(nil)");
 					break;
 				}
-				printf("%s", va_arg(ap, char *)); 
+				printf("%s", ptr); 
 				break;
 		}
 		if ((format[i] == 'c' || format[i] == 'i' || format[i] == 'f' ||
