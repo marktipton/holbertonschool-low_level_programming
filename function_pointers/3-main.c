@@ -17,22 +17,22 @@ int main(int argc, char **argv)
 	if (argc != 4)
 	{
 		printf("Error\n");
-		exit (98);
+		exit(98);
 	}
-	
+
 	operator = argv[2];
-	
+
 	if (get_op_func(operator) == NULL || strlen(operator) != 1)
 	{
 		printf("Error\n");
-		exit (99);
+		exit(99);
 	}
 
 	if (atoi(argv[3]) == 0 && (*operator == '/' || *operator == '%'))
 	{
 		printf("Error\n");
-		exit (100);
-		
+		exit(100);
+
 	}
 	printf("%d\n", get_op_func(operator)(atoi(argv[1]), atoi(argv[3])));
 return(0);
