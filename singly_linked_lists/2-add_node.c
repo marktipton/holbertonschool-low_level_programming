@@ -39,7 +39,7 @@ list_t *add_node(list_t **head, const char *str)
 	if (dup == NULL)
 		return (NULL);
 
-        for (i = 0; str[i]; i++)
+	for (i = 0; str[i]; i++)
 		dup[i] = str[i];
 	new_node = malloc(sizeof(list_t));
 
