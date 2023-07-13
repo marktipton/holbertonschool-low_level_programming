@@ -18,18 +18,17 @@ unsigned int binary_to_uint(const char *b)
 
 	len = strlen(b);
 	sum = 0;
-	i = 1;
+	i = 0;
 
 	if (b == NULL)
 		return (0);
 
-	for (; len > 0; len--)
+	for (; b[i] != '\0'; i++)
 	{
-		if (b[len] != 1 && b[len] != 0)
+		if (b[i] != '1' && b[i] != '0')
 			return (0);
-		if (b[len] == 1)
-			sum += _pow(2, i);
-		i++;	
+
+		sum += (b[i] - '0') * _pow(2, len - i - 1);
 	}	
         return (sum);
 }
