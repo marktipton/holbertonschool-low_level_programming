@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "main.h"
-#include <math.h>
+#include "_pow.c"
 #include <string.h>
 
 /**
@@ -16,7 +16,7 @@ unsigned int binary_to_uint(const char *b)
 	unsigned int i;
 
 
-	len = strlen(b) - 1;
+	len = strlen(b);
 	sum = 0;
 	i = 1;
 
@@ -25,9 +25,9 @@ unsigned int binary_to_uint(const char *b)
 
 	for (; len > 0; len--)
 	{
-		if (b[len] != '1' && b[len] != '0')
+		if (b[len] != 1 && b[len] != 0)
 			return (0);
-		if (b[len] == '1')
+		if (b[len] == 1)
 			sum += _pow(2, i);
 		i++;	
 	}	
