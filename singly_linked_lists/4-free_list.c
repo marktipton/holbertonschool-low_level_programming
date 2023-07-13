@@ -6,7 +6,7 @@
 /**
  * free_list - check the code
  *
- * @head: first node 
+ * @head: first node
  * Return: Always 0.
  */
 void free_list(list_t *head)
