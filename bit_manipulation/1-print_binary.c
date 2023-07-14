@@ -2,13 +2,14 @@
 #include "main.h"
 #include "_pow.c"
 /**
- * main - check the code
+ * print_binary - takes a decimal and prints it in binary
  *
- * Return: Always 0.
+ * @n: decimal input
+ * Return: none
  */
 void print_binary(unsigned long int n)
 {
-	
+
 	if (n == 0) 
 	{
 		return;
