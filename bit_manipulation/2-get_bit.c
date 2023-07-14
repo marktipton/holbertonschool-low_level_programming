@@ -4,7 +4,7 @@
 /**
  * get_bit - returns the value of a bit at a given index
  *
- * @n: decimal number to convert to 
+ * @n: decimal number to convert to
  * @index: decimal input
  * Return: value of bit at index or -1 if error
  */
