@@ -11,7 +11,7 @@
 
 unsigned int count_bits(unsigned long int b)
 {
-	int count;
+	unsigned long int count;
 
 	count = 0;
 	while (b > 0)
