@@ -8,10 +8,6 @@
  */
 void print_binary(unsigned long int n)
 {
-	unsigned long int i;
-	unsigned long int digits;
-	
-	digits = 0;
 	
 	if (n == 0) 
 	{
@@ -20,6 +16,6 @@ void print_binary(unsigned long int n)
 	}
 
 	print_binary(n >> 1);
-	printf("%d", n & 1);
+	printf("%lu", n & 1);
 
 }
