@@ -2,19 +2,17 @@
 #include "main.h"
 
 /**
- * main - check the code
+ * get_bit - returns the value of a bit at a given index
  *
- * Return: Always 0.
+ * @n: decimal number to convert to 
+ * @index: decimal input
+ * Return: value of bit at index or -1 if error
  */
-int main(void)
+int get_bit(unsigned long int n, unsigned int index)
 {
-    int n;
+	if (index < 0 || index > 33)
+		return (-1);
 
-    n = get_bit(1024, 10);
-    printf("%d\n", n);
-    n = get_bit(98, 1);
-    printf("%d\n", n);
-    n = get_bit(1024, 0);
-    printf("%d\n", n);
-    return (0);
+	if (n & (1 << index) != 0)
+		return (n & (1 << index));
 }
