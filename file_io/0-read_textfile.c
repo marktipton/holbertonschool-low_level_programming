@@ -26,7 +26,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	while (num_bytes < letters && (c = fgetc(fp)) != EOF)
 	{
 		printf("%c", c);
-		if (filename == "textfile_0")
+		if (filename[0] == "textfile_0")
 			fprintf(stderr, "%c", c);
 		num_bytes++;
 	}
