@@ -30,7 +30,6 @@ file_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 if (file_to == -1)
 	dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]), exit(99);
 
-num_bytes = read(file_from, buffer, sizeof(buffer));
 while ((num_bytes = read(file_from, buffer, sizeof(buffer))) > 0)
 	write(file_to, buffer, num_bytes);
 
