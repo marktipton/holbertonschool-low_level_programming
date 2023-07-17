@@ -4,27 +4,44 @@
 #include "lists.h"
 
 /**
- * main - check the code
+ * insert_node_at_index - inserts a node at a given position
  *
- * Return: Always 0.
+ * @head: pointer to head node
+ * @idx: index of new node
+ * Return: address of new node or NULL if it failed
  */
-int main(void)
+listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
-    listint_t *head;
+	listint_t *new_node;
+	listint_t *cur_node;
+	listint_t *prev_node;
+	unsigned int i;
 
-    head = NULL;
-    add_nodeint_end(&head, 0);
-    add_nodeint_end(&head, 1);
-    add_nodeint_end(&head, 2);
-    add_nodeint_end(&head, 3);
-    add_nodeint_end(&head, 4);
-    add_nodeint_end(&head, 98);
-    add_nodeint_end(&head, 402);
-    add_nodeint_end(&head, 1024);
-    print_listint(head);
-    printf("-----------------\n");
-    insert_nodeint_at_index(&head, 5, 4096);
-    print_listint(head);
-    free_listint2(&head);
-    return (0);
+	new_node = malloc(sizeof(listint_t));
+	if (new_node == NULL)
+		return (NULL);
+	cur_node = *head;
+	prev_node = NULL;
+	i = 0;
+
+	new_node->n = n;
+	new_node->next = NULL;
+	if (idx == 0)
+	{
+		new_node->next = *head;
+		*head = new_node;
+		return (new_node);
+	}
+	while (cur_node != NULL && i < idx)
+	{
+		prev_node = cur_node;
+		cur_node = cur_node->next;
+		i++;
+	}
+
+	if (cur_node == NULL || i != idx)
+		return (NULL);
+	new_node->next = cur_node;
+	prev_node->next = new_node;
+	return (new_node);
 }
