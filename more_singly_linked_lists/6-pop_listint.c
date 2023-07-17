@@ -12,14 +12,16 @@
 int pop_listint(listint_t **head)
 {
 	listint_t temp;
+	listint_t cur_node;
 	int contents;
 
 	if (head == NULL)
 		return 0;
 	temp = *head;
+	cur_node = *head;
 
-	contents = head->n;
-	*head = head->next;
+	contents = cur_node->n;
+	*head = cur_node->next;
 
 	free(temp);
 
