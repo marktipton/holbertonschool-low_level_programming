@@ -4,26 +4,22 @@
 #include "lists.h"
 
 /**
- * main - check the code
+ * sum_listint - sums all of the data in the linked list
  *
- * Return: Always 0.
+ * @head: pointer to head node
+ * Return: sum or 0 if list is empty
  */
-int main(void)
+int sum_listint(listint_t *head)
 {
-    listint_t *head;
-    int sum;
+	int sum;
+	listint_t *ptr;
+	
+	sum = 0;
+	while (ptr != NULL)
+	{
+		sum += ptr->n;
+		ptr = ptr->next;
+	}
 
-    head = NULL;
-    add_nodeint_end(&head, 0);
-    add_nodeint_end(&head, 1);
-    add_nodeint_end(&head, 2);
-    add_nodeint_end(&head, 3);
-    add_nodeint_end(&head, 4);
-    add_nodeint_end(&head, 98);
-    add_nodeint_end(&head, 402);
-    add_nodeint_end(&head, 1024);
-    sum = sum_listint(head);
-    printf("sum = %d\n", sum);
-    free_listint2(&head);
-    return (0);
+	return (sum);
 }
