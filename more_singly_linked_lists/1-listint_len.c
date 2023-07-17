@@ -4,29 +4,20 @@
 #include "lists.h"
 
 /**
- * main - check the code
+ * listint_len - finds number of elements in listint_t list
  *
- * Return: Always 0.
+ * @h: head pointer of linked list
+ * Return: Number of elements
  */
-int main(void)
+size_t listint_len(const listint_t *h)
 {
-    listint_t *head;
-    listint_t *new;
-    listint_t hello = {8, NULL};
-    size_t n;
+	int i;
 
-    head = &hello;
-    new = malloc(sizeof(listint_t));
-    if (new == NULL)
-    {
-        printf("Error\n");
-        return (1);
-    }
-    new->n = 9;
-    new->next = head;
-    head = new;
-    n = listint_len(head);
-    printf("-> %lu elements\n", n);
-    free(new);
-    return (0);
+	if (h == NULL)
+		return (0);
+	for (i = 1; h->next != NULL; i++)
+	{
+		h = h->next;
+	}
+	return (i);
 }
