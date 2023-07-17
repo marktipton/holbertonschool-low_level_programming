@@ -8,6 +8,7 @@
  *
  * @head: pointer to head node
  * @idx: index of new node
+ * @n: contents of node
  * Return: address of new node or NULL if it failed
  */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
@@ -43,6 +44,6 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		return (NULL);
 	new_node->next = cur_node;
 	prev_node->next = new_node;
-	
+
 	return (new_node);
 }
