@@ -4,23 +4,30 @@
 #include "lists.h"
 
 /**
- * main - check the code
+ * add_nodeint_end - adds node to end of listint_t
  *
- * Return: Always 0.
+ * @head: first node in list
+ * @n: integer to put in new node
+ * Return: Address of new node or NULL if it failed
  */
-int main(void)
+listint_t *add_nodeint_end(listint_t **head, const int n)
 {
-    listint_t *head;
+	listint_t *new_node, *current_node;
 
-    head = NULL;
-    add_nodeint_end(&head, 0);
-    add_nodeint_end(&head, 1);
-    add_nodeint_end(&head, 2);
-    add_nodeint_end(&head, 3);
-    add_nodeint_end(&head, 4);
-    add_nodeint_end(&head, 98);
-    add_nodeint_end(&head, 402);
-    add_nodeint_end(&head, 1024);
-    print_listint(head);
-    return (0);
+	new_node = malloc(sizeof(listint_t));
+	if (new_node == NULL)
+		return (NULL);
+	new_node->n = n;
+	new_node->next = NULL;
+
+	if (*head == NULL)
+	{
+		*head = new_node;
+		return (*head);
+	}
+	current_node = *head;
+	while (current_node->next != NULL)
+		current_node = current_node->next;
+	current_node->next = new_node;
+	return (*head);
 }
