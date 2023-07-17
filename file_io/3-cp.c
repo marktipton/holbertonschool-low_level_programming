@@ -32,23 +32,10 @@ if (file_to == -1)
 
 num_bytes = read(file_from, buffer, sizeof(buffer));
 while ((num_bytes = read(file_from, buffer, sizeof(buffer))) > 0)
-{
-	if (write(file_to, buffer, num_bytes) != num_bytes)
-	{
-		dprintf(2, "Error: Can't write to file %s\n", argv[2]);
-		exit(99);
-	}
+	write(file_to, buffer, num_bytes);
 
-}
-
-if (num_bytes == -1)
-	dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]), exit(98);
-
-if (close(file_from) == -1)
-	dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file_from), exit(100);
-if (close(file_to) == -1)
-	dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file_to), exit(100);
-
+close(file_from);
+close(file_to);
 return (0);
 
 
