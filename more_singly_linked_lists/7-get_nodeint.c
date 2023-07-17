@@ -4,28 +4,29 @@
 #include "lists.h"
 
 /**
- * main - check the code
+ * get_nodeint_at_index - gets the nth node in the listint_t list
  *
- * Return: Always 0.
+ * @head: pointer to head node
+ * @index: index of node starting at 0
+ * Return: nth node or NULL if it does not exist
  */
-int main(void)
+listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
-    listint_t *head;
-    listint_t *node;
+	int count;
+	listint_t *current;
+	
+	if (head == NULL)
+		return (NULL);
+	current = head;
+	count = 0;
 
-    head = NULL;
-    add_nodeint_end(&head, 0);
-    add_nodeint_end(&head, 1);
-    add_nodeint_end(&head, 2);
-    add_nodeint_end(&head, 3);
-    add_nodeint_end(&head, 4);
-    add_nodeint_end(&head, 98);
-    add_nodeint_end(&head, 402);
-    add_nodeint_end(&head, 1024);
-    print_listint(head);
-    node = get_nodeint_at_index(head, 5);
-    printf("%d\n", node->n);
-    print_listint(head);
-    free_listint2(&head);
-    return (0);
+	while (current != NULL && count < index)
+	{
+		count++;
+		current = current->next;
+	}
+	if (count == index)
+		return (current);
+	else
+		return NULL;
 }
