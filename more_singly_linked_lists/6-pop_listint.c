@@ -16,7 +16,7 @@ int pop_listint(listint_t **head)
 	int contents;
 
 	if (head == NULL)
-		return 0;
+		return (0);
 	temp = *head;
 	cur_node = *head;
 
