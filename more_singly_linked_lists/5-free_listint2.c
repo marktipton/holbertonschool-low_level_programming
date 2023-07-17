@@ -4,25 +4,24 @@
 #include "lists.h"
 
 /**
- * main - check the code
+ * free_listint2 - frees a listint_t list and sets head to NULL
  *
- * Return: Always 0.
+ * @head: double pointer to first node in list
+ *
  */
-int main(void)
+void free_listint2(listint_t **head)
 {
-    listint_t *head;
+	listint_t *cur_node;
+	listint_t *temp_node;
 
-    head = NULL;
-    add_nodeint_end(&head, 0);
-    add_nodeint_end(&head, 1);
-    add_nodeint_end(&head, 2);
-    add_nodeint_end(&head, 3);
-    add_nodeint_end(&head, 4);
-    add_nodeint_end(&head, 98);
-    add_nodeint_end(&head, 402);
-    add_nodeint_end(&head, 1024);
-    print_listint(head);
-    free_listint2(&head);
-    printf("%p\n", (void *)head);
-    return (0);
+	if (head == NULL)
+		return;
+	cur_node = *head;
+	while (cur_node != NULL)
+	{
+		temp_node = cur_node;
+		cur_node = cur_node->next;
+		free(temp);
+	}
+	*head = NULL;
 }
