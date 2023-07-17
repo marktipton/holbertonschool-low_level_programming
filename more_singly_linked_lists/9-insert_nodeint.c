@@ -4,7 +4,7 @@
 #include "lists.h"
 
 /**
- * insert_node_at_index - inserts a node at a given position
+ * insert_nodeint_at_index - inserts a node at a given position
  *
  * @head: pointer to head node
  * @idx: index of new node
@@ -43,5 +43,6 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		return (NULL);
 	new_node->next = cur_node;
 	prev_node->next = new_node;
+	
 	return (new_node);
 }
