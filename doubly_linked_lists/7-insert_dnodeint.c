@@ -2,7 +2,6 @@
 #include <string.h>
 #include <stdio.h>
 #include "lists.h"
-
 /**
  * insert_dnodeint_at_index - inserts node at a given index
  *
@@ -13,29 +12,35 @@
  */
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
-	dlistint_t *new_node;
-	dlistint_t *current;
-	unsigned int count;
+	dlistint_t *new_node, *tmp1, *tmp2;
+	unsigned int i;
 
+	new_node = malloc(sizeof(dlistint_t));
+	if (new_node == NULL)
+		return (NULL);
+	tmp1 = *h;
+	tmp2 = NULL;
+	i = 0;
+	new_node->n = n;
+	new_node->next = NULL;
+	new_node->prev = NULL;
 	if (idx == 0)
 	{
-		new_node = add_dnodeint(h, n);
+		new_node->next = *h;
+		tmp1->prev = new_node;
+		*h = new_node;
 		return (new_node);
 	}
-	count = 0;
-	current = *h;
-
-	while (current->next != NULL && count < idx - 1)
+	for (;tmp1->next != NULL && i < idx - 1; i++)
 	{
-		current = current->next;
-		count++;
+		tmp2 = tmp1;
+		tmp1 = tmp1->next;
 	}
-	if (count < (idx - 1) && current->next == NULL)
+	if (tmp1 == NULL || i != idx)
 		return (NULL);
-
-	new_node->prev = current;
-	new_node->next = current->next;
-	current->next = new_node;
+	new_node->next = tmp1;
+	new_node->prev = tmp2;
+	tmp2->next = new_node;
+	tmp1->prev = new_node;
 	return (new_node);
-
 }
