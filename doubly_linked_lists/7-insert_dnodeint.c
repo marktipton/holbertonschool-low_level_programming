@@ -31,7 +31,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		*h = new_node;
 		return (new_node);
 	}
-	for (;tmp1->next != NULL && i < idx - 1; i++)
+	for (;tmp1->next != NULL && i < idx; i++)
 	{
 		tmp2 = tmp1;
 		tmp1 = tmp1->next;
