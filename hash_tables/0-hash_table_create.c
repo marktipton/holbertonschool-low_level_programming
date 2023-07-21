@@ -4,15 +4,12 @@
 #include "hash_tables.h"
 
 /**
- * main - check the code for
+ * hash_table_create - creates a hash table
  *
- * Return: Always EXIT_SUCCESS.
+ * @size: size of hash table array
+ * Return: pointer to hash table or NULL if something failed
  */
-int main(void)
+hash_table_t *hash_table_create(unsigned long int size)
 {
-    hash_table_t *ht;
 
-    ht = hash_table_create(1024);
-    printf("%p\n", (void *)ht);
-    return (EXIT_SUCCESS);
 }

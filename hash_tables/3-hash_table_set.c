@@ -4,15 +4,14 @@
 #include "hash_tables.h"
 
 /**
- * main - check the code
+ * hash_table_set - adds element to hash table
  *
- * Return: Always EXIT_SUCCESS.
+ * @ht: hash table
+ * @key: hash key
+ * @value: value associated w/ key
+ * Return: 1 on success and 0 otherwise
  */
-int main(void)
+int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
-    hash_table_t *ht;
 
-    ht = hash_table_create(1024);
-    hash_table_set(ht, "betty", "cool");
-    return (EXIT_SUCCESS);
 }
