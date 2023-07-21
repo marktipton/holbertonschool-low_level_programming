@@ -12,5 +12,17 @@
  */
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
+	long unsigned int index;
+	index = key_index((const unsigned char *)key, ht->size);
+    
+    Ht_item* item = table->items[index];
 
+    // Provide only non-NULL values.
+    if (item != NULL)
+    {
+        if (strcmp(item->key, key) == 0)
+            return item->value;
+    }
+
+    return NULL;
 }
