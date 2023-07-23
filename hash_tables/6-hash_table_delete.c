@@ -10,13 +10,13 @@
  */
 void hash_table_delete(hash_table_t *ht)
 {
-	unsigned long int index;
+	unsigned long int i;
 	hash_node_t *tmp;
 
 	if (ht == NULL)
 		return;
 
-	index = key_index((const unsigned char *)key, ht->size);
+	i = 0;
 	tmp = ht->array[index];
 
 	while (i < ht->size)
