@@ -10,5 +10,16 @@
  */
 void hash_table_delete(hash_table_t *ht)
 {
+	unsigned long int index;
+	hash_node_t *tmp;
+
+	index = key_index((const unsigned char *)key, ht->size);
+	tmp = ht->array[index];
+
+
+	if (tmp != NULL && strncmp(tmp->key, key, ht->size) == 0)
+	{
+		tmp = NULL;
+	}
 
 }
