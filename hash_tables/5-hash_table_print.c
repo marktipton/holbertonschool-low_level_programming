@@ -24,10 +24,10 @@ void hash_table_print(const hash_table_t *ht)
 		{
 			printf("'%s': '%s'", tmp->key, tmp->value);
 			tmp = tmp->next;
+			if (i + 1 < ht->size)
+				printf(", ");
 		}
 		i++;
-		if (i < ht->size)
-			printf(", ");
 	}
 	printf("}");
 }
