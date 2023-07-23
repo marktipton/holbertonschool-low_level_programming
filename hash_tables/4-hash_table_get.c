@@ -13,16 +13,16 @@
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
 	long unsigned int index;
+	hash_node_t *tmp;
+
 	index = key_index((const unsigned char *)key, ht->size);
-    
-    Ht_item* item = table->items[index];
+	tmp = ht->array[index];
 
-    // Provide only non-NULL values.
-    if (item != NULL)
-    {
-        if (strcmp(item->key, key) == 0)
-            return item->value;
-    }
 
-    return NULL;
+	if (tmp != 0 && strncmp(tmp->key, key, ht->size) == 0)
+	{
+		return ((char *)tmp);
+	}
+	
+	return NULL;
 }
