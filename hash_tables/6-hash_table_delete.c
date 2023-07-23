@@ -13,13 +13,26 @@ void hash_table_delete(hash_table_t *ht)
 	unsigned long int index;
 	hash_node_t *tmp;
 
+	if (ht == NULL)
+		return;
+
 	index = key_index((const unsigned char *)key, ht->size);
 	tmp = ht->array[index];
 
-
-	if (tmp != NULL && strncmp(tmp->key, key, ht->size) == 0)
+	while (i < ht->size)
 	{
-		tmp = NULL;
+		while (ht->array[i] != NULL)
+		{
+			tmp = ht->array[i]->next;
+			free(ht->array[i]->key;
+			free(ht->array[i]->value;
+			free(ht->array[i]);
+			ht->array[i] = next;
+                }
+                i++;
 	}
+	free(ht->array);
+	free(ht);
+
 
 }
