@@ -1,6 +1,12 @@
 #include "search_algos.h"
-
-int print_array(int array[], size_t left, size_t right)
+/**
+ * print_array - prints array of integers
+ *
+ * @array: array of integers
+ * @left: low index
+ * @right: high index
+ */
+void print_array(int array[], size_t left, size_t right)
 {
 	printf("Searching in array: ");
 
@@ -12,7 +18,6 @@ int print_array(int array[], size_t left, size_t right)
 		left++;
 	}
 	printf("\n");
-	return (0);
 }
 /**
  * binary_search - searches for value in sorted array of integers
